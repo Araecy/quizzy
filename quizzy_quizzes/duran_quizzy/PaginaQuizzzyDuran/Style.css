@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    background-color: beige;
+}
+
+.Header1 {
+    padding-bottom: calc(var(--aspect-h)/var(--aspect-w)*100%);
+    position: relative;
+    --aspect-w: 16
+}
+
+.Header1>* {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%
+}
+
+.Header2 {
+    --aspect-h: 9
+}
+
+
+.h-auto {
+    height: auto
+}
+
+.top {
+    top: 77%
+}
