@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./css/nav_styles.css">
+<link rel="stylesheet" href="../css/nav_styles.css">
 <nav id='menu'>
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
   <ul>
@@ -6,7 +6,7 @@
     <li><a class='dropdown-arrow' href='http://'>Quizzy</a>
       <ul class='sub-menus'>
         <li><a href='http://'>Quizzy - Kewin</a></li>
-        <li><a href='http://'>Quizzy - Duran</a></li>
+        <li><a href='quizzy_quizzes/duran_quizzy/PaginaQuizzzyDuran/QuizzyDuran.php'>Quizzy - Duran</a></li>
         <li><a href='http://'>Quizzy - Noah</a></li>
       </ul>
     </li>

@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizzy Lord Of The Rings</title>
     <link rel="stylesheet" href="style.css" media="all">
+    <link rel="stylesheet" href="../../../css/nav_styles.css" media="all">
 </head>
 <body>
-<?php include './nav.php' ?>
+<?php include '../../../nav.php'?>
     <header class="Header1 Header2">
         <img src="Afbeeldingen/Lord-Of-The-Rings.jpg" alt="">
         <img src="Afbeeldingen/branch.png" class="top  h-auto">

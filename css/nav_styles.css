@@ -5,6 +5,7 @@
     height: 50px;
     padding-left: 18px;
     border-radius: 10px;
+    z-index: 99;
 }
 #menu ul, #menu li {
     margin: 0 auto;

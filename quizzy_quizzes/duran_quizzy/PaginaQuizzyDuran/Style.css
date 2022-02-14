@@ -14,7 +14,7 @@ body {
 .Header1 {
     padding-bottom: calc(var(--aspect-h)/var(--aspect-w)*100%);
     position: relative;
-    --aspect-w: 16
+    --aspect-w: 16;
 }
 
 .Header1>* {
@@ -24,7 +24,7 @@ body {
     position: absolute;
     right: 0;
     top: 0;
-    width: 100%
+    width: 100%;
 }
 
 .Header2 {
