@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleIndex.css">
 </head>
+
 <body>
+    <?php include './nav.php' ?>
     <h1>GLR D1A Beroeps1 Quizzy Project</h1>
 </body>
+
 </html>

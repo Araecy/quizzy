@@ -11,21 +11,6 @@
 </head>
 
 <body>
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
-        <ul>
-            <li><a href='./index.php'>Home</a></li>
-            <li><a class='dropdown-arrow' href='http://'>Quizzy</a>
-                <ul class='sub-menus'>
-                    <li><a href='../../kewin_quizzy/index.html'>Quizzy - Kewin</a></li>
-                    <li><a href='../PaginaQuizzyDuran/QuizzyDuran.php'>Quizzy - Duran</a></li>
-                    <li><a href='../../noah_quizzy/noah_quizzy.php'>Quizzy - Noah</a></li>
-                </ul>
-            </li>
-            <li><a href='http://'>About</a></li>
-            <li><a href='http://'>Contact Us</a></li>
-        </ul>
-    </nav>
     <header class="Header1 Header2">
         <img src="Afbeeldingen/Lord-Of-The-Rings.jpg" alt="">
         <img src="Afbeeldingen/branch.png" class="top  h-auto">
