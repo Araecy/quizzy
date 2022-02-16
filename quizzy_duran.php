@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,23 @@
     <link rel="stylesheet" href="style.css" media="all">
     <link rel="stylesheet" href="../../../css/nav_styles.css" media="all">
 </head>
+
 <body>
-<?php include '../../../nav.php'?>
+    <nav id='menu'>
+        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+        <ul>
+            <li><a href='./index.php'>Home</a></li>
+            <li><a class='dropdown-arrow' href='http://'>Quizzy</a>
+                <ul class='sub-menus'>
+                    <li><a href='../../kewin_quizzy/index.html'>Quizzy - Kewin</a></li>
+                    <li><a href='../PaginaQuizzyDuran/QuizzyDuran.php'>Quizzy - Duran</a></li>
+                    <li><a href='../../noah_quizzy/noah_quizzy.php'>Quizzy - Noah</a></li>
+                </ul>
+            </li>
+            <li><a href='http://'>About</a></li>
+            <li><a href='http://'>Contact Us</a></li>
+        </ul>
+    </nav>
     <header class="Header1 Header2">
         <img src="Afbeeldingen/Lord-Of-The-Rings.jpg" alt="">
         <img src="Afbeeldingen/branch.png" class="top  h-auto">
@@ -20,4 +36,5 @@
         </div>
     </header>
 </body>
+
 </html>
