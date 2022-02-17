@@ -8,6 +8,7 @@
     <title>Quizzy Lord Of The Rings</title>
     <link rel="stylesheet" href="css/style_duran.css" media="all">
     <link rel="stylesheet" href="css/nav_styles.css" media="all">
+    <script src="js/Duran.js"></script>
 </head>
 
 <body>
@@ -21,6 +22,20 @@
             <H1 id="MainText">Do your best!</H1>
         </div>
     </header>
+    <main>
+     <center>
+        <h2>Question</h2>
+        <div class="quiz-container">
+        <div id="quiz"></div>
+        </div>
+        <button id="previous">Previous Question</button>
+        <button id="next">Next Question</button>
+        <button id="submit">Submit Quiz</button>
+        <div id="results"></div>
+      </center>
+    </main>
+    <footer>
+    
+    </footer>
 </body>
-
 </html>
