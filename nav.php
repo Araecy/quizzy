@@ -2,9 +2,9 @@
   <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
   <ul>
     <li><a href='./index.php'>Home</a></li>
-    <li><a class='dropdown-arrow' href='#'>Quizzy</a>
+    <li><a class='dropdown-arrow'>Quizzy</a>
       <ul class='sub-menus'>
-        <li><a href='./quizzy_kewin.php'>Quizzy - Kewin</a></li>
+        <li><a href='./kewinsQuizzy.php'>Kewin's quizzy</a></li>
         <li><a href='./quizzy_duran.php'>Quizzy - Duran</a></li>
         <li><a href='./quizzy_noah.php'>Quizzy - Noah</a></li>
       </ul>
