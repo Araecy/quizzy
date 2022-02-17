@@ -10,8 +10,11 @@
     </head>
     <body>
         <?php include 'nav.php'?>
-        <div>
-            <h1>GLR D1A Beroeps1 Quizzy Project</h1>
+        <div id="firstDiv">
+            <h1>Kewin's quizzy | MR.Robot</h1>
+            <div id="buttonDiv">
+                <button onclick="startQuiz()">Start quiz</button>
+            </div>
         </div>
         <script src="js/kewinsQuizzyScript.js"></script>
     </body>

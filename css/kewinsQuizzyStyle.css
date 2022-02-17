@@ -3,9 +3,34 @@ body{
     color: white;
 }
 
-div{
+#firstDiv{
     left: 0;
     right: 0;
     margin: 0 auto 0 auto;
     width: 75%;
+}
+
+#buttonDiv{
+    left: 0;
+    right: 0;
+    margin: 500px auto 0 auto;
+    width: 75px;
+}
+
+#buttonDiv > button{
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#buttonDiv > button:hover{
+    color: cyan;
+}
+
+#buttonDiv > button:active{
+    color: blue;
 }
