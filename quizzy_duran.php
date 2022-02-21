@@ -12,30 +12,40 @@
 </head>
 
 <body>
-<?php include 'nav.php'?>
+    <?php include 'nav.php' ?>
     <header class="Header1 Header2">
         <img src="Images/Lord-Of-The-Rings.jpg" alt="">
-        <img src="Images/branch.png" class="top  h-auto">
+        <img src="Images/branch.png" class="top h-auto">
         <div id="KopTekst">
             <h1 id="MainText">Welcome to my quiz</h1>
             <h1 id="MainText">You think you can pass?</h1>
             <H1 id="MainText">Do your best!</H1>
         </div>
     </header>
-    <main>
-     <center>
-        <h2>Question</h2>
-        <div class="quiz-container">
-        <div id="quiz"></div>
+    <main id="main">
+        <center>
+            <h2>Question</h2>
+            <div class="quiz-container">
+                
+
+                <div id="Answers">
+                    <button onclick="fout1()" id="fout1">Kaas</button> <button onclick="goed()" id="goed">Kaas2</button>
+                    <br>
+                    <button onclick="fout2()" id="fout2">Kaas3</button> <button onclick="fout3()" id="fout3">Kaas4</button>
+                </div>
+                <div id="quiz"></div>
+
+                <!-- <button id="previous">Previous Question</button> -->
+                <button onclick="next1()" id="next">Next Question</button>
+                <br>
+                <!--<button id="submit">Submit Quiz</button> -->
+                <div id="results"></div>
+        </center>
         </div>
-        <button id="previous">Previous Question</button>
-        <button id="next">Next Question</button>
-        <button id="submit">Submit Quiz</button>
-        <div id="results"></div>
-      </center>
     </main>
     <footer>
-    
+
     </footer>
 </body>
+
 </html>
