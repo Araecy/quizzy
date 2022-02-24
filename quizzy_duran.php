@@ -24,7 +24,8 @@
     </header>
     <main id="main">
         <center>
-            <h2>Question</h2>
+            <h2>Question: </h2>
+            <h4>1/10<strong onclick="next1()">></strong></h4>
             <div class="quiz-container">
                 
 

@@ -31,12 +31,13 @@ function next1(){
   `
   <center>
   <h2>Question2</h2>
+  <h4><strong onclick="previous1()"><</strong>2/10<strong onclick="next2()">></strong></h4>
   <div class="quiz-container">
 
       <div id="Answers">
-          <button onclick="fout1()" id="fout1">Kaas</button> <button onclick="goed()" id="goed">Kaas2</button>
-          <br>
-          <button onclick="fout2()" id="fout2">Kaas3</button> <button onclick="fout3()" id="fout3">Kaas4</button>
+      <button onclick="goed()" id="goed">Kaas</button> <button onclick="fout1()" id="fout1">Kaas2</button>
+      <br>
+      <button onclick="fout2()" id="fout2">Kaas3</button> <button onclick="fout3()" id="fout3">Kaas4</button>
       </div>
       <div id="quiz"></div>
 
@@ -52,8 +53,10 @@ function previous1(){
   document.getElementById('main').innerHTML = 
   `
   <center>
-  <h2>Question</h2>
+  <h2>Question: </h2>
+  <h4>1/10<strong onclick="next1()">></strong></h4>
   <div class="quiz-container">
+      
 
       <div id="Answers">
           <button onclick="fout1()" id="fout1">Kaas</button> <button onclick="goed()" id="goed">Kaas2</button>
