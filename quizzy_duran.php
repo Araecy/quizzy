@@ -24,15 +24,15 @@
     </header>
     <main id="main">
         <center>
-            <h2>Question: </h2>
+            <h2>Which movie won the Academy Award for Best Picture?</h2>
             <h4>1/10<strong onclick="next1()">></strong></h4>
             <div class="quiz-container">
                 
 
                 <div id="Answers">
-                    <button onclick="fout1()" id="fout1">Kaas</button> <button onclick="goed()" id="goed">Kaas2</button>
+                    <button onclick="fout1()" id="fout1">a)The Fellowship of the Ring</button> <button onclick="goed()" id="goed">b)The Return of the King</button>
                     <br>
-                    <button onclick="fout2()" id="fout2">Kaas3</button> <button onclick="fout3()" id="fout3">Kaas4</button>
+                    <button onclick="fout2()" id="fout2">c)The Two Towers</button> <button onclick="fout3()" id="fout3">d)The Hobbit</button>
                 </div>
                 <div id="quiz"></div>
 
