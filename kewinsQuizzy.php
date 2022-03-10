@@ -19,3 +19,7 @@
         <script src="js/kewinsQuizzyScript.js"></script>
     </body>
 </html>
+
+<?php
+    
+?>
