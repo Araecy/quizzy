@@ -9,7 +9,7 @@ h4 {
 
 body {
   margin: 0;
-  background-color: beige;
+  background-color: beige !important; 
   font-family: Brush Script MT, Brush Script Std, cursive;
   color: beige;
 }

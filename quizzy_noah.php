@@ -6,16 +6,14 @@
     <link rel="stylesheet" href="./css/style_noah.css">
     <link rel="stylesheet" href="./css/nav_styles.css">
     <script src="./js/script_noah.js" defer></script>
-    <title>Flash Card App</title>
+    <title>Noah</title>
 </head>
 
 <body>
     <?php include 'nav.php' ?>
-    <div id="quiz"></div>
-    <button id="submit">Get Results</button>
-    <div id="results"></div>
-    
-    <!-- <div id="app">
+
+<!--     
+    <div id="app">
         <h1 v-text="deckName"></h1>
 
         <div class="user-input">
@@ -23,6 +21,7 @@
         </div>
 
         <div @click="flipped = !flipped" class="card">
+            <h2 v-html="cards[index].front"></h2>
             <h2 v-html="userInput == 'flip' || flipped ? '' : cards[index].front"></h2>
             <div v-html="userInput == 'flip' || flipped ? cards[index].back : ''"></div>
         </div>
@@ -51,7 +50,7 @@
             },
             methods: {
                 move(change) {
-                    if (this.cards[this.index + change] && correctAnswer == true) {
+                    if (this.cards[this.index + change]) {
                         this.index += change;
                         this.flipped = false;
                     }
@@ -61,6 +60,7 @@
 
         const app = Vue.createApp(FlashCardApp).mount('#app');
     </script> -->
+
 </body>
 
 </html>

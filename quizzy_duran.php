@@ -27,7 +27,6 @@
             <h2>Which movie won the Academy Award for Best Picture?</h2>
             <h4>1/10<strong onclick="next1()">></strong></h4>
             <div class="quiz-container">
-                
 
                 <div id="Answers">
                     <button onclick="fout1()" id="fout1">a)The Fellowship of the Ring</button> <button onclick="goed()" id="goed">b)The Return of the King</button>
