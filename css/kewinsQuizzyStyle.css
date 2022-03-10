@@ -34,3 +34,63 @@ body{
 #buttonDiv > button:active{
     color: blue;
 }
+
+.centerText{
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+#answerButtonsDiv{
+    left: 0;
+    right: 0;
+    margin: 100px auto 0 auto;
+    width: 208px;
+}
+
+#answerButtonsDiv > button{
+    width: 100px;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    margin: 3px 1px;
+}
+
+#answerButtonsDiv > button:hover{
+    color: cyan;
+}
+
+#answerButtonsDiv > button:active{
+    color: blue;
+}
+
+#previousAndNextQuestionButtonsDiv{
+    left: 0;
+    right: 0;
+    margin: 100px auto 0 auto;
+    width: 224px;
+}
+
+#previousAndNextQuestionButtonsDiv > button{
+    width: 110px;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#previousAndNextQuestionButtonsDiv > button:hover{
+    color: cyan;
+}
+
+#previousAndNextQuestionButtonsDiv > button:active{
+    color: blue;
+}
+
+.nextQuestionButtonFirstQuestion{
+    margin: 0 0 0 114px;
+}
