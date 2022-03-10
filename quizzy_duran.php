@@ -26,22 +26,24 @@
         <center>
             <h2>Which movie won the Academy Award for Best Picture?</h2>
             <h4>1/10<strong onclick="next1()">></strong></h4>
-            <div class="quiz-container">
-
+            
+             <div id="gif">
+                <div id="quiz1"></div>
                 <div id="Answers">
-                    <button onclick="fout1()" id="fout1">a)The Fellowship of the Ring</button> <button onclick="goed()" id="goed">b)The Return of the King</button>
+                    <button onclick="answer1()" id="answer1">a)The Fellowship of the Ring</button> <button onclick="Answer()" id="Answer">b)The Return of the King</button>
                     <br>
-                    <button onclick="fout2()" id="fout2">c)The Two Towers</button> <button onclick="fout3()" id="fout3">d)The Hobbit</button>
+                    <button onclick="answer2()" id="answer2">c)The Two Towers</button> <button onclick="answer3()" id="answer3">d)The Hobbit</button>
                 </div>
-                <div id="quiz"></div>
-
+                <div id="bottom">
                 <!-- <button id="previous">Previous Question</button> -->
                 <button onclick="next1()" id="next">Next Question</button>
                 <br>
                 <!--<button id="submit">Submit Quiz</button> -->
+                </div>
+                <div id="quiz2"></div>
+                </div>
                 <div id="results"></div>
         </center>
-        </div>
     </main>
     <footer>
 

@@ -71,6 +71,10 @@ button:hover {
   margin-top: 40px;
 }
 
+/* #Answers {
+  position: absolute;
+} */
+
 #Answers button {
   background-color: rgb(216, 192, 139);
   width: 220px;
@@ -87,8 +91,23 @@ button:hover {
   width: 10%;
 }
 
-/* #quiz {
-  float: right;
-  position: absolute;
-  margin-left: 50%;
-} */
+/* gird */
+#gif {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+#Answers { grid-area: 2 / 2 / 5 / 5; }
+#quiz1 { grid-area: 2 / 1 / 5 / 2; }
+#quiz2 { grid-area: 2 / 5 / 5 / 6; }
+#bottom { grid-area: 5 / 2 / 6 / 5; }
+
+#Answers , #quiz1, #quiz2, #bottom{
+  border: orangered solid 5px;
+}
+
+#gif img {
+  min-width: 50%;
+}
