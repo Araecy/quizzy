@@ -23,7 +23,7 @@ function question(questionNumber){
         <h1 class="centerText">Question 2</h1>
         <p class="centerText">Who investigated the 5/9 hack?</p>
         <div id="answerButtonsDiv">
-            <button id="question2Button1" onclick="checkIfAnswerIsCorrect(false, this.id)">Dom</button>
+            <button id="question2Button1" onclick="checkIfAnswerIsCorrect(true, this.id)">Dom</button>
             <button id="question2Button2" onclick="checkIfAnswerIsCorrect(false, this.id)">Terry Colby</button>
             <button id="question2Button3" onclick="checkIfAnswerIsCorrect(false, this.id)">Frank Cody</button>
             <button id="question2Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Santiago</button>
@@ -40,9 +40,9 @@ function question(questionNumber){
         <h1 class="centerText">Question 3</h1>
         <p class="centerText">How does Elliot connect with people?</p>
         <div id="answerButtonsDiv">
-            <button id="question3Button1" onclick="checkIfAnswerIsCorrect(true, this.id)">Social Media</button>
+            <button id="question3Button1" onclick="checkIfAnswerIsCorrect(false, this.id)">Social Media</button>
             <button id="question3Button2" onclick="checkIfAnswerIsCorrect(false, this.id)">Phone Calls</button>
-            <button id="question3Button3" onclick="checkIfAnswerIsCorrect(false, this.id)">Hacking</button>
+            <button id="question3Button3" onclick="checkIfAnswerIsCorrect(true, this.id)">Hacking</button>
             <button id="question3Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Encrypted Letters</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
