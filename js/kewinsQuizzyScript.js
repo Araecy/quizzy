@@ -13,7 +13,7 @@ function question(questionNumber){
             <button id="question1Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Dom</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="nextQuestionButtonFirstQuestion" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="nextQuestionButtonFirstQuestion" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -29,8 +29,8 @@ function question(questionNumber){
             <button id="question2Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Santiago</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -46,8 +46,8 @@ function question(questionNumber){
             <button id="question3Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Encrypted Letters</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -63,8 +63,8 @@ function question(questionNumber){
             <button id="question4Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">8</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -80,8 +80,8 @@ function question(questionNumber){
             <button id="question5Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Steve Golin</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -97,8 +97,8 @@ function question(questionNumber){
             <button id="question6Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Ray Heyworth</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -114,8 +114,8 @@ function question(questionNumber){
             <button id="question7Button4" onclick="checkIfAnswerIsCorrect(true, this.id)">Fernando Vera</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -131,8 +131,8 @@ function question(questionNumber){
             <button id="question8Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">Amazon Prime</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -148,8 +148,8 @@ function question(questionNumber){
             <button id="question9Button4" onclick="checkIfAnswerIsCorrect(false, this.id)">United Kingdom</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
-            <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
+            <button class="nextQuestionButton" onclick="question(${questionNumber + 1}), checkIfHasAnswer()">Next Question</button>
         </div>
         `;
     }
@@ -165,18 +165,36 @@ function question(questionNumber){
             <button id="question10Button4" onclick="checkIfAnswerIsCorrect(true, this.id)">Social anxiety disorder</button>
         </div>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1}), checkIfHasAnswer()">Previous Question</button>
         </div>
         `;
     }
 }
 
 function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId){
-    if(falseOrTrue == true){
-        console.log(answerButtonId);
-        console.log("Answer is correct!");
-        return;
+    const nodeList = document.querySelectorAll("#answerButtonsDiv > button");
+    for(let i = 0; i < nodeList.length; i++){
+        nodeList[i].style="pointer-events: none; cursor: default";
+        // document.getElementById("answerButtonsDiv").button.style="pointer-events: none, cursor: default";
     }
-    console.log(answerButtonId);
-    console.log("Answer is wrong.");
+    if(falseOrTrue == true){
+        document.getElementById(answerButtonId).style="background-color: green; pointer-events: none; cursor: default";
+    }
+    else{
+        document.getElementById(answerButtonId).style="background-color: red";
+    }
+    addAnswerGiven(answerButtonId);
 }
+
+let answersGiven=[];
+
+function addAnswerGiven(answerButtonId){
+    answersGiven.push(answerButtonId);
+}
+
+function checkIfHasAnswer(){
+    console.log("function checkIfHasAnswer() iniciated");
+
+}
+
+//NOTES: when click button in question, add curent questionnumber to an array, then when go to previous or next question, check if the current questionnumber is en the array, if it is then somehow make clicked answer green or red based on if it's the correct answer or wrong, and then lock all buttons so that it isn't possible to change your answer
