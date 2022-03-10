@@ -9,7 +9,7 @@
         <li><a href='./quizzy_noah.php'>Quizzy - Noah</a></li>
       </ul>
     </li>
-    <li><a href='http://'>About</a></li>
+    <li><a href='http://'><li>About</li></a></li>
     <li><a href='http://'>Contact Us</a></li>
   </ul>
 </nav>
