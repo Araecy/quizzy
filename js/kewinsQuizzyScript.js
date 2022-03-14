@@ -1,7 +1,10 @@
-let questionNumber = 1;
+let questionNumberGlobal = 1; // globally scroped quesion number.
 
+
+// Phisical quesitons put in as 
 function question(questionNumber){
     if(questionNumber == 1){
+        questionNumberGlobal = 1;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 1</h1>
@@ -18,6 +21,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 2){
+        questionNumberGlobal = 2;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 2</h1>
@@ -35,6 +39,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 3){
+        questionNumberGlobal = 3;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 3</h1>
@@ -52,6 +57,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 4){
+        questionNumberGlobal = 4;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 4</h1>
@@ -69,6 +75,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 5){
+        questionNumberGlobal = 5;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 5</h1>
@@ -86,6 +93,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 6){
+        questionNumberGlobal = 6;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 6</h1>
@@ -103,6 +111,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 7){
+        questionNumberGlobal = 7;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 7</h1>
@@ -120,6 +129,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 8){
+        questionNumberGlobal = 8;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 8</h1>
@@ -137,6 +147,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 9){
+        questionNumberGlobal = 9;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 9</h1>
@@ -154,6 +165,7 @@ function question(questionNumber){
         `;
     }
     else if(questionNumber == 10){
+        questionNumberGlobal = 10;
         document.getElementById("firstDiv").innerHTML = `
         <h1>Kewin's quizzy | MR.Robot</h1>
         <h1 class="centerText">Question 10</h1>
@@ -183,13 +195,14 @@ function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId){
     else{
         document.getElementById(answerButtonId).style="background-color: red";
     }
-    addAnswerGiven(answerButtonId);
+    addAnswerGiven(answerButtonId, questionNumberGlobal);
 }
+let answersGivenQuestionNumber = [];
+let answersGiven = [];
 
-let answersGiven=[];
-
-function addAnswerGiven(answerButtonId){
+function addAnswerGiven(answerButtonId, questionNumberGlobal){
     answersGiven.push(answerButtonId);
+    answersGivenQuestionNumber.push(questionNumberGlobal);
 }
 
 function checkIfHasAnswer(){
