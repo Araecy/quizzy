@@ -1,0 +1,100 @@
+body{
+    background-color: black !important;
+    color: white;
+}
+
+#firstDiv{
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto;
+    width: 75%;
+}
+
+#buttonDiv{
+    left: 0;
+    right: 0;
+    margin: 500px auto 0 auto;
+    width: 75px;
+}
+
+#buttonDiv > button{
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    color: white;
+    width: 75px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#buttonDiv > button:hover{
+    color: cyan;
+}
+
+#buttonDiv > button:active{
+    color: blue;
+}
+
+.centerText{
+    text-align: center;
+    margin: 25px 0 0 0;
+}
+
+#answerButtonsDiv{
+    left: 0;
+    right: 0;
+    margin: 100px auto 75px auto;
+    width: 208px;
+}
+
+#answerButtonsDiv > button{
+    width: 100px;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    color: white;
+    height: 40px;
+    border-radius: 10px;
+    margin: 3px 1px;
+}
+
+#answerButtonsDiv > button:hover{
+    color: cyan;
+}
+
+#answerButtonsDiv > button:active{
+    color: blue;
+}
+
+#score{
+    margin: 0 0 25px 0;
+}
+
+#previousAndNextQuestionButtonsDiv{
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto;
+    width: 224px;
+}
+
+#previousAndNextQuestionButtonsDiv > button{
+    width: 110px;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#previousAndNextQuestionButtonsDiv > button:hover{
+    color: cyan;
+}
+
+#previousAndNextQuestionButtonsDiv > button:active{
+    color: blue;
+}
+
+.nextQuestionButtonFirstQuestion{
+    margin: 0 0 0 114px;
+}

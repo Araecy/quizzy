@@ -1,0 +1,25 @@
+html,
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+/* grid */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+    
+.divTop { grid-area: 1 / 1 / 2 / 6; }
+.divMiddle { grid-area: 2 / 2 / 4 / 5; }
+.divLeft { grid-area: 2 / 1 / 4 / 2; }
+.divRight { grid-area: 2 / 5 / 4 / 6; }
+.divBottom { grid-area: 4 / 1 / 6 / 6; }
+
+.divTop,.divMiddle,.divLeft,.divRight,.divBottom {
+    border: 5px solid orangered;
+}
