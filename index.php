@@ -11,7 +11,6 @@
 </head>
 <body>
     <?php include './nav.php'?>
-    <p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
 <div class="parent">
 <div class="divTop">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis reiciendis inventore magnam, iusto nulla in sapiente mollitia fugit provident! Quod perferendis dolores temporibus cum rem exercitationem ullam quaerat est.</div>
 <div class="divMidle"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur accusamus, ea distinctio doloribus dolorum iusto nihil eos commodi eligendi sequi praesentium ratione qui quisquam? Nesciunt recusandae alias similique hic.</div>
