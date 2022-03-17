@@ -35,10 +35,8 @@
                     <button onclick="answer2()" id="answer2">c)The Two Towers</button> <button onclick="answer3()" id="answer3">d)The Hobbit</button>
                 </div>
                 <div id="bottom">
-                <!-- <button id="previous">Previous Question</button> -->
                 <button onclick="next1()" id="next">Next Question</button>
                 <br>
-                <!--<button id="submit">Submit Quiz</button> -->
                 </div>
                 <div id="quiz2"></div>
                 </div>

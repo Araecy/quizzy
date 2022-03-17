@@ -1,5 +1,19 @@
 let questionNumberGlobal = 1; // globally stored question number. This gets updated per question. This way the program knows what question it's currently on.
 let score = 0;
+let answersGivenQuestionNumber = [];
+let answersGiven = [
+    [0],
+    [1],
+    [2],
+    [3],
+    [4],
+    [5],
+    [6],
+    [7],
+    [8],
+    [9],
+    [10]
+];
 
 // Questions:
 function question(questionNumber){
@@ -199,7 +213,6 @@ function question(questionNumber){
         const nodeList = document.querySelectorAll("#answerButtonsDiv > button");
         for(let i = 0; i < nodeList.length; i++){
             nodeList[i].style="pointer-events: none; cursor: default";
-            // document.getElementById("answerButtonsDiv").button.style="pointer-events: none, cursor: default";
         }
         if(isItCorrect == "true"){
             document.getElementById(`question${questionNumber}Button${currentQuestionAnswer}`).style="background-color: green; pointer-events: none; cursor: default";
@@ -217,7 +230,6 @@ function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId){
     const nodeList = document.querySelectorAll("#answerButtonsDiv > button");
     for(let i = 0; i < nodeList.length; i++){
         nodeList[i].style="pointer-events: none; cursor: default";
-        // document.getElementById("answerButtonsDiv").button.style="pointer-events: none, cursor: default";
     }
     if(falseOrTrue == true){
         document.getElementById(answerButtonId).style="background-color: green; pointer-events: none; cursor: default";
@@ -227,23 +239,8 @@ function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId){
     else{
         document.getElementById(answerButtonId).style="background-color: red";
     }
-    addAnswerGiven(answerButtonId, questionNumberGlobal);
+    addAnswerGiven(questionNumberGlobal);
 }
-
-let answersGivenQuestionNumber = [];
-let answersGiven = [
-    [0],
-    [1],
-    [2],
-    [3],
-    [4],
-    [5],
-    [6],
-    [7],
-    [8],
-    [9],
-    [10]
-];
 
 function putAnswerButtonIntoArray(questionNumber, answerButtonId){
     let slicedAnswerButtonId = parseInt(answerButtonId.slice(-1));
@@ -252,8 +249,6 @@ function putAnswerButtonIntoArray(questionNumber, answerButtonId){
     console.log(answersGiven);
 }
 
-function addAnswerGiven(answerButtonId, questionNumberGlobal){
+function addAnswerGiven(questionNumberGlobal){
     answersGivenQuestionNumber.push(questionNumberGlobal);
 }
-
-//NOTES: when click button in question, add curent questionnumber to an array, then when go to previous or next question, check if the current questionnumber is en the array, if it is then somehow make clicked answer green or red based on if it's the correct answer or wrong, and then lock all buttons so that it isn't possible to change your answer
