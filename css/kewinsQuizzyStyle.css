@@ -3,6 +3,15 @@ body{
     color: white;
 }
 
+button {
+    background-color: rgb(201, 169, 102);
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
 #firstDiv{
     left: 0;
     right: 0;
@@ -45,6 +54,13 @@ body{
     right: 0;
     margin: 100px auto 75px auto;
     width: 208px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 2px 5px; 
+    grid-template-areas: 
+    ". ."
+    ". .";
 }
 
 #answerButtonsDiv > button{
@@ -74,7 +90,7 @@ body{
     left: 0;
     right: 0;
     margin: 0 auto 0 auto;
-    width: 224px;
+    width: 229px;
 }
 
 #previousAndNextQuestionButtonsDiv > button{
@@ -87,6 +103,10 @@ body{
     border-radius: 10px;
 }
 
+#previousAndNextQuestionButtonsDiv > button:nth-of-type(1){
+    margin: 0 5px 0 0;
+}
+
 #previousAndNextQuestionButtonsDiv > button:hover{
     color: cyan;
 }
@@ -96,5 +116,5 @@ body{
 }
 
 .nextQuestionButtonFirstQuestion{
-    margin: 0 0 0 114px;
+    margin: 0 0 0 119px !important;
 }
