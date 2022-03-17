@@ -1,0 +1,63 @@
+:root {
+	/* Main color options
+	--------------------------------------------*/
+	--red: #ff0000;
+	--blue: #add8e6;
+	--yellow: #ffff00;
+	--green: #90ee90;
+	--black: #000000;
+	--gray: #3f3f3f;
+	--white: #ffffff;
+
+
+	/* soft color options
+	--------------------------------------------*/
+	--green-soft: #00dbaf;
+
+	/* alternative color options
+	--------------------------------------------*/
+	--green-alt: #77B300;
+	--blue-alt: #2A9FD6;
+    --indigo-alt: #6610f2;
+    --purple-alt: #6f42c1;
+    --pink-alt: #e83e8c;
+    --red-alt: #CC0000;
+    --orange-alt: #fd7e14;
+    --yellow-alt: #FF8800;
+    --green-alt: #77B300;
+    --teal-alt: #20c997;
+    --cyan-alt: #9933CC;
+    --gray-alt: #555;
+    --gray-dark-alt: #222;
+
+	/* warning types color options
+	--------------------------------------------*/
+    --primary: #2A9FD6;
+    --secondary: #555;
+    --success: #77B300;
+    --info: #9933CC;
+    --warning: #FF8800;
+    --danger: #CC0000;
+    --light: #222;
+    --dark: #ADAFAE;
+
+	/* transparenter colour options
+	--------------------------------------------*/
+	--red-semi: #ff0000aa;
+	--blue-semi: #add8e6aa;
+	--yellow-semi: #ffff00aa;
+	--green-semi: #90ee90aa;
+	--black-semi: #000000aa;
+	--white-semi: #ffffffaa;
+
+	/* other
+	--------------------------------------------*/
+	--background-color: #352762;
+	--white-color: #fff;
+	
+	/* Fonts
+	--------------------------------------------*/
+	--font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	
+}
