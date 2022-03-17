@@ -1,16 +1,21 @@
+h1 {
+  font-family: Brush Script MT, Brush Script Std, cursive;
+  color: beige;
+}
+
 h2 {
   padding-top: 20%;
   color: black;
 }
 
 h4 {
+  font-family: Brush Script MT, Brush Script Std, cursive;
   color: black;
 }
 
 body {
   margin: 0;
   background-color: beige !important; 
-  font-family: Brush Script MT, Brush Script Std, cursive;
   color: beige;
 }
 
