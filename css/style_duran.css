@@ -1,118 +1,158 @@
 h1 {
-  font-family: Brush Script MT, Brush Script Std, cursive;
-  color: beige;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: beige;
 }
 
 h2 {
-  padding-top: 20%;
-  color: black;
+    padding-top: 20%;
+    color: black;
 }
 
 h4 {
-  font-family: Brush Script MT, Brush Script Std, cursive;
-  color: black;
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: black;
 }
 
 body {
-  margin: 0;
-  background-color: beige !important; 
-  color: beige;
+    margin: 0;
+    background-color: beige !important;
+    color: beige;
 }
 
 #MainText {
-  text-align: center;
-  font-size: 5vw;
-  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+    text-align: center;
+    font-size: 5vw;
+    text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
 }
 
 .Header1 {
-  padding-bottom: calc(var(--aspect-h)/var(--aspect-w)*100%);
-  position: relative;
-  --aspect-w: 16;
+    padding-bottom: calc(var(--aspect-h)/var(--aspect-w)*100%);
+    position: relative;
+    --aspect-w: 16;
 }
 
 .Header1>* {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 100%;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
 }
 
 .Header2 {
-  --aspect-h: 9
+    --aspect-h: 9
 }
 
 .h-auto {
-  height: auto
+    height: auto
 }
 
 .top {
-  top: 77%
+    top: 77%
 }
 
 #KopTekst {
-  padding-top: 45px;
+    padding-top: 45px;
 }
 
 button {
-  background-color: rgb(201, 169, 102);
-  color: #fff;
-  border: 0px;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-bottom: 20px;
+    background-color: rgb(201, 169, 102);
+    color: #fff;
+    border: 0px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
 button:hover {
-  background-color: #38a;
+    background-color: #38a;
 }
 
 .quiz-container {
-  position: relative;
-  height: 200px;
-  margin-top: 40px;
+    position: relative;
+    height: 200px;
+    margin-top: 40px;
 }
+
 
 /* #Answers {
   position: absolute;
 } */
 
 #Answers button {
-  background-color: rgb(216, 192, 139);
-  width: 220px;
-  height: 100px;
-  padding: 20px;
-  font-size: 22px;
+    background-color: rgb(192, 184, 164);
+    font-size: 22px;
+    top: 185px;
+    right: 10px;
+}
+
+#Answers button #Answer,
+#answer1,
+#answer2,
+#answer3 {
+    background-color: rgba(0, 0, 0, 0.05);
+    width: 220px;
+    height: 100px;
+    padding: 20px;
+    font-size: 22px;
 }
 
 #Answers button:hover {
-  background-color: #38a;
+    background-color: #38a;
 }
 
 #fout {
-  width: 10%;
+    width: 50%;
 }
+
 
 /* gird */
+
 #gif {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
-#Answers { grid-area: 2 / 2 / 5 / 5; }
-#quiz1 { grid-area: 2 / 1 / 5 / 2; }
-#quiz2 { grid-area: 2 / 5 / 5 / 6; }
-#bottom { grid-area: 5 / 2 / 6 / 5; }
+
+#Answers {
+    grid-area: 2 / 2 / 5 / 5;
+}
+
+#quiz1 {
+    grid-area: 2 / 1 / 5 / 2;
+}
+
+#quiz2 {
+    grid-area: 2 / 5 / 5 / 6;
+}
+
+#bottom {
+    grid-area: 5 / 2 / 6 / 5;
+}
+
 
 /* #Answers , #quiz1, #quiz2, #bottom{
-  border: orangered solid 5px;
-} */
-
+//   border: orangered solid 5px;
+// } 
 #gif img {
-  min-width: 50%;
+    min-width: 50%;
+}
+
+
+/* test */
+
+ol .questions {
+    color: #000;
+}
+
+.questions button {
+    width: 10px;
+}
+
+.questions {
+    color: #000;
 }
