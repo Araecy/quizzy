@@ -10,7 +10,6 @@
     </head>
     <body>
         <?php include 'nav.php'?>
-        <span id="scoreCounter" class="centerText">Score: 0</span>
         <div id="firstDiv">
             <h1>Osu quizzy</h1>
             <div id="buttonDiv">
