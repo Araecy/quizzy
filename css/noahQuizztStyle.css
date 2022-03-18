@@ -1,10 +1,10 @@
 body {
   background-color: #000 !important;
-  /* background-image: url("../Images/2214257.webp") !important */
+  background-image: url("../images/osuBackground.jpg") !important;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
 body {
   font-size: 20px;
   font-family: sans-serif;
-  color: #ffb300;
+  color: #ffffff;
 }
 
 .centerText {
@@ -37,15 +37,21 @@ body {
 #answerButtonsDiv > button,
 #previousAndNextQuestionButtonsDiv > button {
   background-color: transparent;
-  border-radius: 10px;
-  border: 2px solid #ffffff;
+  -webkit-box-shadow: inset 0px 0px 5px 0px #90ee90;
+          box-shadow: inset 0px 0px 5px 0px #90ee90;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 30px;
+  border: 0px solid;
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
-  background-color: #5f5f5f;
+  color: #90ee90;
+  background-color: #000000;
   font-family: Arial;
+  width: 250px;
   font-size: 17px;
   padding: 12px 21px;
+  margin: 0 5px 0 0;
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
 }
@@ -53,7 +59,8 @@ body {
 #buttonDiv > button:hover,
 #answerButtonsDiv > button:hover,
 #previousAndNextQuestionButtonsDiv > button:hover {
-  background-color: #00ffff8e;
+  -webkit-box-shadow: inset 0px 0px 10px 0px #90ee90;
+          box-shadow: inset 0px 0px 10px 0px #90ee90;
   color: #00ffff;
 }
 
@@ -63,20 +70,38 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  height: 230px;
+}
+
+#previousAndNextQuestionButtonsDiv {
+  margin: 0px 0px 0px 0px;
+  height: 120px;
+}
+
+#previousAndNextQuestionButtonsDiv > button {
+  margin: 0px 0px 0px 0px;
+}
+
+.nextQuestionButtonFirstQuestion {
+  margin: 0 0 54px 0 !important;
+}
+
+.previousButtonLastQuestion {
+  margin: 54px 0 0 0 !important;
 }

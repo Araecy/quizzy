@@ -10,18 +10,18 @@ let score = 0;
 // ? previousAndNextQuestionButtons;
 // ! end question block.
 
-function question(questionNumber){
-    if(questionNumber == 1){
+function question(questionNumber) {
+    if (questionNumber == 1) {
         questionNumberGlobal = 1;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 1</h1>
-        <p class="centerText">Who is responsible for Elliot's safety?</p>
+        <p class="centerText">What type of game is osu?</p>
         <div id="answerButtonsDiv">
-            <button id="question1Button1" onclick="checkIfAnswerIsCorrect(false, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=false>Vera</button>
-            <button id="question1Button2" onclick="checkIfAnswerIsCorrect(true, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=true>Leon</button>
-            <button id="question1Button3" onclick="checkIfAnswerIsCorrect(false, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=false>Derek</button>
-            <button id="question1Button4" onclick="checkIfAnswerIsCorrect(false, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=false>Dom</button>
+            <button id="question1Button1" onclick="checkIfAnswerIsCorrect(false, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=false>Moba</button>
+            <button id="question1Button2" onclick="checkIfAnswerIsCorrect(false, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=false>fps</button>
+            <button id="question1Button3" onclick="checkIfAnswerIsCorrect(true, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=true>rhythm</button>
+            <button id="question1Button4" onclick="checkIfAnswerIsCorrect(false, this.id), putAnswerButtonIntoArray(questionNumberGlobal, this.id)" data-is-correct=false>rpg</button>
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
@@ -29,10 +29,10 @@ function question(questionNumber){
         </div>
         `;
     }
-    else if(questionNumber == 2){
+    else if (questionNumber == 2) {
         questionNumberGlobal = 2;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 2</h1>
         <p class="centerText">Who investigated the 5/9 hack?</p>
         <div id="answerButtonsDiv">
@@ -43,15 +43,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 3){
+    else if (questionNumber == 3) {
         questionNumberGlobal = 3;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 3</h1>
         <p class="centerText">How does Elliot connect with people?</p>
         <div id="answerButtonsDiv">
@@ -62,15 +62,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 4){
+    else if (questionNumber == 4) {
         questionNumberGlobal = 4;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 4</h1>
         <p class="centerText">How many Emmy awards does this series have?</p>
         <div id="answerButtonsDiv">
@@ -81,15 +81,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 5){
+    else if (questionNumber == 5) {
         questionNumberGlobal = 5;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 5</h1>
         <p class="centerText">Who created the Mr. Robot series?</p>
         <div id="answerButtonsDiv">
@@ -100,15 +100,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 6){
+    else if (questionNumber == 6) {
         questionNumberGlobal = 6;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 6</h1>
         <p class="centerText">Which of the following is Whiterose's lover?</p>
         <div id="answerButtonsDiv">
@@ -119,15 +119,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 7){
+    else if (questionNumber == 7) {
         questionNumberGlobal = 7;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 7</h1>
         <p class="centerText">The supplier of Elliot's suboxone is...</p>
         <div id="answerButtonsDiv">
@@ -138,15 +138,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 8){
+    else if (questionNumber == 8) {
         questionNumberGlobal = 8;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 8</h1>
         <p class="centerText">On which station was the series first premiered?</p>
         <div id="answerButtonsDiv">
@@ -157,15 +157,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 9){
+    else if (questionNumber == 9) {
         questionNumberGlobal = 9;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 9</h1>
         <p class="centerText">Where was the series filmed?</p>
         <div id="answerButtonsDiv">
@@ -176,15 +176,15 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
             <button class="nextQuestionButton" onclick="question(${questionNumber + 1})">Next Question</button>
+            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
-    else if(questionNumber == 10){
+    else if (questionNumber == 10) {
         questionNumberGlobal = 10;
         document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1>osu quiz.</h1>
         <h1 class="centerText">Question 10</h1>
         <p class="centerText">What made Elliot live isolated from other people?</p>
         <div id="answerButtonsDiv">
@@ -195,25 +195,25 @@ function question(questionNumber){
         </div>
         <p class="centerText" id="score">Score: 0</p>
         <div id="previousAndNextQuestionButtonsDiv">
-            <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
+            <button class="previousQuestionButton previousButtonLastQuestion" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         `;
     }
 
-    if(answersGivenQuestionNumber.indexOf(questionNumber) != -1){
+    if (answersGivenQuestionNumber.indexOf(questionNumber) != -1) {
         currentQuestionAnswer = answersGiven[questionNumber][1];
         let isItCorrect = document.getElementById(`question${questionNumber}Button${currentQuestionAnswer}`).dataset.isCorrect;
 
         const nodeList = document.querySelectorAll("#answerButtonsDiv > button");
-        for(let i = 0; i < nodeList.length; i++){
-            nodeList[i].style="pointer-events: none; cursor: default";
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i].style = "pointer-events: none; cursor: default";
             // document.getElementById("answerButtonsDiv").button.style="pointer-events: none, cursor: default";
         }
-        if(isItCorrect == "true"){
-            document.getElementById(`question${questionNumber}Button${currentQuestionAnswer}`).style="background-color: green; pointer-events: none; cursor: default";
+        if (isItCorrect == "true") {
+            document.getElementById(`question${questionNumber}Button${currentQuestionAnswer}`).style = "background-color: green; pointer-events: none; cursor: default";
         }
-        if(isItCorrect == "false"){
-            document.getElementById(`question${questionNumber}Button${currentQuestionAnswer}`).style="background-color: red; pointer-events: none; cursor: default";
+        if (isItCorrect == "false") {
+            document.getElementById(`question${questionNumber}Button${currentQuestionAnswer}`).style = "background-color: red; pointer-events: none; cursor: default";
         }
     }
 
@@ -221,19 +221,19 @@ function question(questionNumber){
 }
 
 // This fucntion keeps the score and checks wether it's correct or not.
-function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId){
+function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId) {
     const nodeList = document.querySelectorAll("#answerButtonsDiv > button");
-    for(let i = 0; i < nodeList.length; i++){
-        nodeList[i].style="pointer-events: none; cursor: default";
+    for (let i = 0; i < nodeList.length; i++) {
+        nodeList[i].style = "pointer-events: none; cursor: default";
         // document.getElementById("answerButtonsDiv").button.style="pointer-events: none, cursor: default";
     }
-    if(falseOrTrue == true){
-        document.getElementById(answerButtonId).style="background-color: green; pointer-events: none; cursor: default";
+    if (falseOrTrue == true) {
+        document.getElementById(answerButtonId).style = "background-color: green; pointer-events: none; cursor: default";
         score++;
         document.getElementById("score").innerHTML = `Score: ${score}`;
     }
-    else{
-        document.getElementById(answerButtonId).style="background-color: red";
+    else {
+        document.getElementById(answerButtonId).style = "background-color: red";
     }
     addAnswerGiven(answerButtonId, questionNumberGlobal);
 }
@@ -253,14 +253,14 @@ let answersGiven = [
     [10]
 ];
 
-function putAnswerButtonIntoArray(questionNumber, answerButtonId){
+function putAnswerButtonIntoArray(questionNumber, answerButtonId) {
     let slicedAnswerButtonId = parseInt(answerButtonId.slice(-1));
-    console.log("SlicedId: "+answerButtonId.slice(-1));
+    console.log("SlicedId: " + answerButtonId.slice(-1));
     answersGiven[questionNumber].push(slicedAnswerButtonId);
     console.log(answersGiven);
 }
 
-function addAnswerGiven(answerButtonId, questionNumberGlobal){
+function addAnswerGiven(answerButtonId, questionNumberGlobal) {
     answersGivenQuestionNumber.push(questionNumberGlobal);
 }
 
