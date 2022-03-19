@@ -94,8 +94,6 @@
                 </script>
                 </div>
                 <div id="bottom">
-
-                <br>
                 </div>
                 <div id="quiz2"></div>
                 </div>
