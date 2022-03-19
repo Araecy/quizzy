@@ -76,7 +76,7 @@
 		};
 		// huidige question placeholder
 		this.currentNum = this.questionStatus.querySelector( 'span.number-current' );
-		this.currentNum.innerHTML = Number( this.current + 5);
+		this.currentNum.innerHTML = Number( this.current + 6);
 		// totaal questions placeholder
 		this.totalQuestionNum = this.questionStatus.querySelector( 'span.number-total' );
 		this.totalQuestionNum.innerHTML = this.questionsCount + 5;
@@ -207,7 +207,7 @@
 		// first, create next question number placeholder
 		this.nextQuestionNum = document.createElement( 'span' );
 		this.nextQuestionNum.className = 'number-next';
-		this.nextQuestionNum.innerHTML = Number( this.current + 5 );
+		this.nextQuestionNum.innerHTML = Number( this.current + 6 );
 		// insert it in the DOM
 		this.questionStatus.appendChild( this.nextQuestionNum );
 	}

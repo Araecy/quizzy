@@ -8,9 +8,10 @@
     <title>Quizzy Lord Of The Rings</title>
     <link rel="stylesheet" href="css/style_duran.css" media="all">
     <link rel="stylesheet" href="css/nav_styles.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <script src="js/Modernizer.js"></script>
-    <script src="js/Duran.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/component.css"/>
+    <script src="js/Duran.js" defer></script>
+    <script src="js/Modernizer.js" defer></script>
+    
 </head>
 
 <body>
@@ -41,6 +42,23 @@
                 <br>
                 </div>
                 <div id="quiz2"></div>
+                <script src="js/class.js"></script>
+                <script src="js/steps.js"></script>
+                <script>
+                    var theQuiz = document.getElementById('theQuiz');
+                    //disable form autocomplete
+                    theQuiz.setAttribute("autocomplete", "off");
+
+                    new stepsForm(theQuiz, {
+                        onSubmit: function(form) {
+                            // hide form
+                            classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
+                            var messageEl = theQuiz.querySelector('.final-message');
+                            messageEl.innerHTML = 'Tanks for doing the quiz.';
+                            classie.addClass(messageEl, 'show');
+                        }
+                    });
+                </script>
                 </div>
                 <div id="results"></div>
         </center>
