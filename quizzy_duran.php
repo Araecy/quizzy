@@ -8,6 +8,8 @@
     <title>Quizzy Lord Of The Rings</title>
     <link rel="stylesheet" href="css/style_duran.css" media="all">
     <link rel="stylesheet" href="css/nav_styles.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/Modernizer.js"></script>
     <script src="js/Duran.js"></script>
 </head>
 

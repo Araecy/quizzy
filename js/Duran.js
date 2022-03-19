@@ -152,121 +152,79 @@ function next5(){
   document.getElementById('main').innerHTML =
   `
   <center>
-  <h2>Openvraag1?</h2>
-  <h4><strong><</strong>6/10<strong onclick="next6()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
+             <div id="gif">
+                <div id="quiz1"></div>
+                <div id="Answers">
+                <section>
+        <form id="theQuiz" class="simform">
+                    <div class="simform-inner">
+                        <ol class="questions">
+                            <li>
+                                <span><label for="q1">Openvraag?</label></span>
+                                <input id="q1" name="q1" type="text" />
+                            </li>
+                            <li>
+                                <span><label for="q2">Openvraag2?</label></span>
+                                <input id="q2" name="q2" type="text" />
+                            </li>
+                            <li>
+                                <span><label for="q3">Openvraag3?</label></span>
+                                <input id="q3" name="q3" type="text" />
+                            </li>
+                            <li>
+                                <span><label for="q4">openvraag4?</label></span>
+                                <input id="q4" name="q4" type="text" />
+                            </li>
+                            <li>
+                                <span><label for="q5">openvraag5?</label></span>
+                                <input id="q5" name="q5" type="text" />
+                            </li>
+                        </ol>
+                        <!-- /questions -->
+                        <button class="submit" type="submit"></button>
+                        <div class="controls">
+                        <button class="show" id="Check">&check;</button>
+                            <button id="next" class="next">Next question</button>
+                            <div class="progress"></div>
+                            <span class="number">
+                                        <span class="number-current"></span>
+                            <span class="number-total"></span>
+                            </span>
+                            <span class="error-message"></span>
+                        </div>
+                        <!-- / controls -->
+                    </div>
+                    <!-- /simform-inner -->
+                    <span class="final-message"></span>
+                </form>
+                <!-- /simform -->
 
-      <button onclick="next6()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
+                </div>
+                <!-- /container -->
+                <script src="js/class.js"></script>
+                <script src="js/steps.js"></script>
+                <script>
+                    var theQuiz = document.getElementById('theQuiz');
+                    //disable form autocomplete
+                    theQuiz.setAttribute("autocomplete", "off");
 
-function next6(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag2?</h2>
-  <h4><strong><</strong>7/10<strong onclick="next7()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
+                    new stepsForm(theQuiz, {
+                        onSubmit: function(form) {
+                            // hide form
+                            classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
+                            var messageEl = theQuiz.querySelector('.final-message');
+                            messageEl.innerHTML = 'Tanks for doing the quiz.';
+                            classie.addClass(messageEl, 'show');
+                        }
+                    });
+                </script>
+                </div>
+                <div id="bottom">
 
-      <button onclick="next7()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
-function next7(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag3?</h2>
-  <h4><strong><</strong>8/10<strong onclick="next8()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <button onclick="next8()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
-function next8(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag4?</h2>
-  <h4><strong><</strong>9/10<strong onclick="next9()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <button onclick="next9()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
-
-function next9(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag5?</h2>
-  <h4><strong><</strong>10/10</h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <br>
-      <button onclick="Submit()" id="submit">Submit Quiz</button>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
+                <br>
+                </div>
+                <div id="quiz2"></div>
+                </div>
+                <div id="results"></div>
+        </center>`
 }
