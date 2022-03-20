@@ -168,7 +168,7 @@
 			classie.addClass( nextQuestion, 'current' );
 		}
 
-		// after animation ends, remove class "show-next" from form element and change current question placeholder
+		// zodra de animation stopt, haal class "show-next" van form element en verander huidige question placeholder
 		let self = this,
 			onEndTransitionFn = function( ev ) {
 				if( support.transitions ) {
@@ -181,8 +181,6 @@
 					classie.removeClass( self.el, 'show-next' );
 					self.currentNum.innerHTML = self.nextQuestionNum.innerHTML;
 					self.questionStatus.removeChild( self.nextQuestionNum );
-					// force the focus on the next input
-					nextQuestion.querySelector( 'input, textarea, select' ).focus();
 				}
 			};
 

@@ -222,3 +222,10 @@ ol .questions {
     top: 90% !important;
     right: 60% !important;
 }
+
+#main2 {
+    display: none;
+}
+#mainHidden {
+    display: none;
+}

@@ -8,8 +8,7 @@
     <title>Quizzy Lord Of The Rings</title>
     <link rel="stylesheet" href="css/style_duran.css" media="all">
     <link rel="stylesheet" href="css/nav_styles.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <script src="js/Modernizer.js"></script>
+
     <script src="js/Duran.js"></script>
 </head>
 
@@ -75,6 +74,8 @@
 
                 </div>
                 <!-- /container -->
+                <link rel="stylesheet" type="text/css" href="css/component.css" />
+                <script src="js/Modernizer.js"></script>
                 <script src="js/class.js"></script>
                 <script src="js/steps.js"></script>
                 <script>
@@ -84,7 +85,7 @@
 
                     new stepsForm(theQuiz, {
                         onSubmit: function(form) {
-                            // hide form
+                            // verberg form
                             classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
                             var messageEl = theQuiz.querySelector('.final-message');
                             messageEl.innerHTML = 'Tanks for doing the quiz.';
