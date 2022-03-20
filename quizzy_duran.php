@@ -52,47 +52,47 @@
                 <div id="quiz1"></div>
                 <div id="Answers">
                 <section>
-        <form id="theQuiz" class="simform">
-                    <div class="simform-inner">
-                        <ol class="questions">
-                            <li>
-                                <span><label for="q1">Openvraag?</label></span>
-                                <input id="q1" name="q1" type="text" />
-                            </li>
-                            <li>
-                                <span><label for="q2">Openvraag2?</label></span>
-                                <input id="q2" name="q2" type="text" />
-                            </li>
-                            <li>
-                                <span><label for="q3">Openvraag3?</label></span>
-                                <input id="q3" name="q3" type="text" />
-                            </li>
-                            <li>
-                                <span><label for="q4">openvraag4?</label></span>
-                                <input id="q4" name="q4" type="text" />
-                            </li>
-                            <li>
-                                <span><label for="q5">openvraag5?</label></span>
-                                <input id="q5" name="q5" type="text" />
-                            </li>
-                        </ol>
-                        <!-- /questions -->
-                        <button class="submit" type="submit"></button>
-                        <div class="controls">
-                        <button class="show" id="Check">&check;</button>
-                            <button id="next" class="next">Next question</button>
-                            <div class="progress"></div>
-                            <span class="number">
-                                        <span class="number-current"></span>
-                            <span class="number-total"></span>
-                            </span>
-                            <span class="error-message"></span>
+                <form id="theQuiz" class="simform">
+                        <div class="simform-inner">
+                            <ol class="questions">
+                                <li>
+                                    <span><label for="q1">Openvraag?</label></span>
+                                    <input id="q1" name="q1" type="text" />
+                                </li>
+                                <li>
+                                    <span><label for="q2">Openvraag2?</label></span>
+                                    <input id="q2" name="q2" type="text" />
+                                </li>
+                                <li>
+                                    <span><label for="q3">Openvraag3?</label></span>
+                                    <input id="q3" name="q3" type="text" />
+                                </li>
+                                <li>
+                                    <span><label for="q4">openvraag4?</label></span>
+                                    <input id="q4" name="q4" type="text" />
+                                </li>
+                                <li>
+                                    <span><label for="q5">openvraag5?</label></span>
+                                    <input id="q5" name="q5" type="text" />
+                                </li>
+                            </ol>
+                            <!-- /questions -->
+                            
+                            <div class="controls">
+                            <button onclick="Answer()" class="show" id="Check">&check;</button>
+                                <button id="next" class="next">Next question</button>
+                                <div class="progress"></div>
+                                <span class="number">
+                                            <span class="number-current"></span>
+                                <span class="number-total"></span>
+                                </span>
+                                <span class="error-message"></span>
+                            </div>
+                            <!-- / controls -->
                         </div>
-                        <!-- / controls -->
-                    </div>
-                    <!-- /simform-inner -->
-                    <span class="final-message"></span>
-                </form>
+                        <!-- /simform-inner -->
+                        <span class="final-message"></span>
+                        </form>
                 <!-- /simform -->
 
                 </div>
