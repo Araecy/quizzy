@@ -1,4 +1,5 @@
 let score = 0;
+let checkIfAnswerd = 0;
 
 function Answer(){
   document.getElementById("Answer").style='background-color: green;';
@@ -8,6 +9,9 @@ function Answer(){
   document.getElementById("answer1").onclick = "answered()";
   document.getElementById("answer2").onclick = "answered()";
   document.getElementById("answer3").onclick = "answered()";
+  if (checkIfAnswerd < 1){
+    checkIfAnswerd ++;
+}
   if (score < 10){
     score ++;
   }
@@ -21,6 +25,9 @@ function answer1(){
   document.getElementById("answer1").onclick = "answered()";
   document.getElementById("answer2").onclick = "answered()";
   document.getElementById("answer3").onclick = "answered()";
+  if (checkIfAnswerd < 1){
+    checkIfAnswerd ++;
+  }
 }
 
 function answer2(){
@@ -31,6 +38,9 @@ function answer2(){
   document.getElementById("answer1").onclick = "answered()";
   document.getElementById("answer2").onclick = "answered()";
   document.getElementById("answer3").onclick = "answered()";
+  if (checkIfAnswerd < 1){
+    checkIfAnswerd ++;
+  }
 }
 
 function answer3(){
@@ -41,6 +51,9 @@ function answer3(){
   document.getElementById("answer1").onclick = "answered()";
   document.getElementById("answer2").onclick = "answered()";
   document.getElementById("answer3").onclick = "answered()";
+  if (checkIfAnswerd < 1){
+    checkIfAnswerd ++;
+  }
 }
 //Score loggen
 function Submit(){
@@ -48,7 +61,8 @@ function Submit(){
 }
 // Switched naar vraag 2
 function next1(){
-  document.getElementById('main').innerHTML = 
+  if (checkIfAnswerd == 1){
+    document.getElementById('main').innerHTML = 
   `
   <center>
   <h2>How manny times does Frodo fall down in The Lord of the Rings trilogy?</h2>
@@ -70,7 +84,10 @@ function next1(){
       <div id="quiz2"></div>
       </div>
       <div id="results"></div>
-</center>`
+    </center>`
+    checkIfAnswerd - 1;
+  }
+  
 }
 // Switched naar vraag 3
 function next2(){
