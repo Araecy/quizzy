@@ -2,7 +2,7 @@
 <html id="html" lang="en">
 
 <head>
-<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizzy Lord Of The Rings</title>
@@ -28,8 +28,7 @@
         <center>
             <h2>Which movie won the Academy Award for Best Picture?</h2>
             <h4>1/10<strong onclick="next1()">></strong></h4>
-            
-             <div id="gif">
+            <div id="gif">
                 <div id="quiz1"></div>
                 <div id="Answers">
                     <button onclick="answer1()" id="answer1">a)The Fellowship of the Ring</button> <button onclick="Answer()" id="Answer">b)The Return of the King</button>
@@ -37,64 +36,62 @@
                     <button onclick="answer2()" id="answer2">c)The Two Towers</button> <button onclick="answer3()" id="answer3">d)The Hobbit</button>
                 </div>
                 <div id="bottom">
-                <button onclick="next1()" id="next">Next Question</button>
-                <br>
+                    <button onclick="next1()" id="next">Next Question</button>
+                    <br>
                 </div>
                 <div id="quiz2"></div>
-                </div>
-                <div id="results"></div>
+            </div>
+            <div id="results"></div>
         </center>
     </main>
     <!-- deze element wordt veranderd naar main en de andere wordt gehidden zodat de Javascript goed werkt -->
     <main id="main2">
-    <center>
-             <div id="gif">
+        <center>
+            <div id="gif">
                 <div id="quiz1"></div>
                 <div id="Answers">
-                <section>
-                <form id="theQuiz" class="simform">
-                        <div class="simform-inner">
-                            <ol class="questions">
-                                <li>
-                                    <span><label for="q1">Openvraag?</label></span>
-                                    <input id="q1" name="q1" type="text" />
-                                </li>
-                                <li>
-                                    <span><label for="q2">Openvraag2?</label></span>
-                                    <input id="q2" name="q2" type="text" />
-                                </li>
-                                <li>
-                                    <span><label for="q3">Openvraag3?</label></span>
-                                    <input id="q3" name="q3" type="text" />
-                                </li>
-                                <li>
-                                    <span><label for="q4">openvraag4?</label></span>
-                                    <input id="q4" name="q4" type="text" />
-                                </li>
-                                <li>
-                                    <span><label for="q5">openvraag5?</label></span>
-                                    <input id="q5" name="q5" type="text" />
-                                </li>
-                            </ol>
-                            <!-- /questions -->
-                            
-                            <div class="controls">
-                            <button onclick="Answer()" class="show" id="Check">&check;</button>
-                                <button id="next" class="next">Next question</button>
-                                <div class="progress"></div>
-                                <span class="number">
-                                            <span class="number-current"></span>
-                                <span class="number-total"></span>
-                                </span>
-                                <span class="error-message"></span>
+                    <section>
+                        <form id="theQuiz" class="simform">
+                            <div class="simform-inner">
+                                <ol class="questions">
+                                    <li>
+                                        <span><label for="q1">Openvraag?</label></span>
+                                        <input id="q1" name="q1" type="text" />
+                                    </li>
+                                    <li>
+                                        <span><label for="q2">Openvraag2?</label></span>
+                                        <input id="q2" name="q2" type="text" />
+                                    </li>
+                                    <li>
+                                        <span><label for="q3">Openvraag3?</label></span>
+                                        <input id="q3" name="q3" type="text" />
+                                    </li>
+                                    <li>
+                                        <span><label for="q4">openvraag4?</label></span>
+                                        <input id="q4" name="q4" type="text" />
+                                    </li>
+                                    <li>
+                                        <span><label for="q5">openvraag5?</label></span>
+                                        <input id="q5" name="q5" type="text" />
+                                    </li>
+                                </ol>
+                                <!-- /questions -->
+                                <div class="controls">
+                                    <button onclick="Answer()" class="show" id="Check">&check;</button>
+                                    <button id="next" class="next">Next question</button>
+                                    <div class="progress"></div>
+                                    <span class="number">
+                                        <span class="number-current"></span>
+                                        <span class="number-total"></span>
+                                    </span>
+                                    <span class="error-message"></span>
+                                </div>
+                                <!-- / controls -->
                             </div>
-                            <!-- / controls -->
-                        </div>
-                        <!-- /simform-inner -->
-                        <span class="final-message"></span>
+                            <!-- /simform-inner -->
+                            <span class="final-message"></span>
                         </form>
-                <!-- /simform -->
-
+                        <!-- /simform -->
                 </div>
                 <!-- /container -->
                 <script src="js/class.js"></script>
@@ -114,12 +111,12 @@
                         }
                     });
                 </script>
-                </div>
-                <div id="bottom">
-                </div>
-                <div id="quiz2"></div>
-                </div>
-                <div id="results"></div>
+            </div>
+            <div id="bottom">
+            </div>
+            <div id="quiz2"></div>
+            </div>
+            <div id="results"></div>
         </center>
     </main>
     <footer>

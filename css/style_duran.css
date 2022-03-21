@@ -133,18 +133,7 @@ button:hover {
 #bottom {
     grid-area: 5 / 2 / 6 / 5;
 }
-
-
-/* #Answers , #quiz1, #quiz2, #bottom{
-//   border: orangered solid 5px;
-// } 
-#gif img {
-    min-width: 50%;
-}
-
-
-/* test */
-
+/* open vragen */
 ol .questions {
     color: #000;
 }
@@ -226,6 +215,7 @@ ol .questions {
 #main2 {
     display: none;
 }
+
 #mainHidden {
     display: none;
 }
