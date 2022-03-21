@@ -82,17 +82,17 @@ button:hover {
 } */
 
 #Answers button {
-    background-color: rgb(192, 184, 164);
+    background-color: rgb(201, 169, 102);
     font-size: 22px;
     top: 185px;
     right: 10px;
 }
 
-#Answers button #Answer,
+#Answers button ,
 #answer1,
 #answer2,
 #answer3 {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: rgb(201, 169, 102);
     width: 220px;
     height: 100px;
     padding: 20px;
@@ -155,4 +155,77 @@ ol .questions {
 
 .questions {
     color: #000;
+}
+
+.number {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: black;   
+}
+.final-message {
+    color: black;
+}
+
+#Check {
+    position: absolute;
+    right: 0;
+    bottom: 2.15em;
+    /* padding-bottom van plus progress bar hoogte */
+    display: block;
+    padding: 0 !important;
+    width: 2em !important;
+    height: 2em !important;
+    border: none;
+    background-color: rgb(167, 154, 135) !important;
+    color: rgba(0, 0, 0, 0.4) !important;
+    text-align: center;
+    opacity: 0;
+    z-index: 100;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+    transition: transform 0.3s, opacity 0.3s;
+    -webkit-transform: translateX(-20%);
+    transform: translateX(-20%);
+    pointer-events: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+#Check:hover {
+    background-color: #38a !important;
+}
+
+#Check::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 10%;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-family: 'icomoon';
+    line-height: 2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#Check.show {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    pointer-events: auto;
+}
+
+#next{
+    height: 61px !important;
+    width: 175px !important;
+    top: 90% !important;
+    right: 60% !important;
+}
+
+#main2 {
+    display: none;
+}
+#mainHidden {
+    display: none;
 }

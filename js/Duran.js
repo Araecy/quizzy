@@ -42,11 +42,11 @@ function answer3(){
   document.getElementById("answer2").onclick = "answered()";
   document.getElementById("answer3").onclick = "answered()";
 }
-
+//Score loggen
 function Submit(){
   console.log(score+"/10");
 }
-
+// Switched naar vraag 2
 function next1(){
   document.getElementById('main').innerHTML = 
   `
@@ -72,7 +72,7 @@ function next1(){
       <div id="results"></div>
 </center>`
 }
-
+// Switched naar vraag 3
 function next2(){
   document.getElementById('main').innerHTML =
   `
@@ -98,7 +98,7 @@ function next2(){
       <div id="results"></div>
   </center>`
 }
-
+// Switched naar vraag 4
 function next3(){
   document.getElementById('main').innerHTML =
   `
@@ -123,7 +123,7 @@ function next3(){
       <div id="results"></div>
   </center>`
 }
-
+// Switched naar vraag 5
 function next4(){
   document.getElementById('main').innerHTML =
   `
@@ -148,125 +148,10 @@ function next4(){
       <div id="results"></div>
   </center>`
 }
+// Switch 2 id's zodat de openvragen worden laten zien en de meerkeuze vragen weg gehaald
 function next5(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag1?</h2>
-  <h4><strong><</strong>6/10<strong onclick="next6()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <button onclick="next6()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
-
-function next6(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag2?</h2>
-  <h4><strong><</strong>7/10<strong onclick="next7()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <button onclick="next7()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
-function next7(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag3?</h2>
-  <h4><strong><</strong>8/10<strong onclick="next8()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <button onclick="next8()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
-function next8(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag4?</h2>
-  <h4><strong><</strong>9/10<strong onclick="next9()">></strong></h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <button onclick="next9()" id="next">Next Question</button>
-      <br>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
-}
-
-function next9(){
-  document.getElementById('main').innerHTML =
-  `
-  <center>
-  <h2>Openvraag5?</h2>
-  <h4><strong><</strong>10/10</h4>
-  
-   <div id="gif">
-      <div id="quiz1"></div>
-      <div id="Answers">
-        <button onclick="Answer()" id="Answer">a)Anaheim</button> <button onclick="answer2()" id="answer2">b)Glendale</button>
-        <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
-      </div>
-      <div id="bottom">
-
-      <br>
-      <button onclick="Submit()" id="submit">Submit Quiz</button>
-      </div>
-      <div id="quiz2"></div>
-      </div>
-      <div id="results"></div>
-  </center>`
+  let Swap = document.getElementById("main2");
+  let old = document.getElementById("main"); 
+  Swap.id = "main";
+  old.id = "main2";
 }

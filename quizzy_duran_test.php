@@ -8,8 +8,7 @@
     <title>Quizzy Lord Of The Rings</title>
     <link rel="stylesheet" href="css/style_duran.css" media="all">
     <link rel="stylesheet" href="css/nav_styles.css" media="all">
-    <link rel="stylesheet" type="text/css" href="css/component.css" />
-    <script src="js/Modernizer.js"></script>
+
     <script src="js/Duran.js"></script>
 </head>
 
@@ -34,7 +33,7 @@
                     <div class="simform-inner">
                         <ol class="questions">
                             <li>
-                                <span><label for="q1">Openvraag1?</label></span>
+                                <span><label for="q1">Openvraag?</label></span>
                                 <input id="q1" name="q1" type="text" />
                             </li>
                             <li>
@@ -57,7 +56,8 @@
                         <!-- /questions -->
                         <button class="submit" type="submit"></button>
                         <div class="controls">
-                            <button class="next">&check;</button>
+                        <button class="show" id="Check">&check;</button>
+                            <button id="next" class="next">Next question</button>
                             <div class="progress"></div>
                             <span class="number">
                                         <span class="number-current"></span>
@@ -74,6 +74,8 @@
 
                 </div>
                 <!-- /container -->
+                <link rel="stylesheet" type="text/css" href="css/component.css" />
+                <script src="js/Modernizer.js"></script>
                 <script src="js/class.js"></script>
                 <script src="js/steps.js"></script>
                 <script>
@@ -83,16 +85,8 @@
 
                     new stepsForm(theQuiz, {
                         onSubmit: function(form) {
-                            // hide form
+                            // verberg form
                             classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
-
-                            /*
-                            form.submit()
-                            or
-                            AJAX request (maybe show loading indicator while we don't have an answer..)
-                            */
-
-                            // let's just simulate something...
                             var messageEl = theQuiz.querySelector('.final-message');
                             messageEl.innerHTML = 'Tanks for doing the quiz.';
                             classie.addClass(messageEl, 'show');
@@ -101,8 +95,6 @@
                 </script>
                 </div>
                 <div id="bottom">
-                <button onclick="next1()" id="next">Next Question</button>
-                <br>
                 </div>
                 <div id="quiz2"></div>
                 </div>
