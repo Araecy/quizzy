@@ -203,6 +203,9 @@ function question(questionNumber){
         <div id="previousAndNextQuestionButtonsDiv">
             <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
+        <div id="summaryButtonDiv">
+            <button onclick="summary()">Verstuur</button>
+        </div>
         `;
     }
 
@@ -251,4 +254,22 @@ function putAnswerButtonIntoArray(questionNumber, answerButtonId){
 
 function addAnswerGiven(questionNumberGlobal){
     answersGivenQuestionNumber.push(questionNumberGlobal);
+}
+
+function summary(){
+    document.getElementById("firstDiv").innerHTML = `
+        <h1>Kewin's quizzy | MR.Robot</h1>
+        <h1 class="centerText">Resultaat</h1>
+        <div id="endScorePDiv">
+        <p class="centerText" id="endScoreP">Eindscore: <br><br></p>
+        </div>
+        <div id="scorePointsDiv">
+
+        </div>
+        `;
+    for(i = 0; i < score; i++){
+        document.getElementById("scorePointsDiv").innerHTML += `
+            <img src="Images/kewinsQuizzyScorePoint.png"></img>
+        `;
+    }
 }

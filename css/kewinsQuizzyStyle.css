@@ -89,7 +89,7 @@ button {
 #previousAndNextQuestionButtonsDiv{
     left: 0;
     right: 0;
-    margin: 0 auto 0 auto;
+    margin: 0 auto 20px auto;
     width: 229px;
 }
 
@@ -117,4 +117,39 @@ button {
 
 .nextQuestionButtonFirstQuestion{
     margin: 0 0 0 119px !important;
+}
+
+#summaryButtonDiv{
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto;
+    width: 70px;
+}
+
+#summaryButtonDiv > button{
+    width: 70px;
+    background-color: rgb(20, 20, 20);
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    color: white;
+    height: 30px;
+    border-radius: 10px;
+}
+
+#endScorePDiv{
+    display: inline-block;
+}
+
+#endScoreP{
+    
+}
+
+#scorePointsDiv{
+    display: inline-block;
+}
+
+#scorePointsDiv > img{
+    width: 45px;
+    background-color: white;
+    border-radius: 30px;
 }
