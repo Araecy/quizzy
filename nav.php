@@ -9,8 +9,8 @@
         <li><a href='./quizzy_noah.php'>Quizzy - Noah</a></li>
       </ul>
     </li>
-    <li><a href='http://'><li>About</li></a></li>
-    <li><a href='http://'>Contact Us</a></li>
+    <li><a href='./aboutUs.php'><li>About us</li></a></li>
+    <li><a href='./contactUs.php'>Contact us</a></li>
   </ul>
 </nav>
 
