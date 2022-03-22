@@ -10,5 +10,11 @@
     </head>
     <body>
         <?php include './nav.php'?>
+        <div id="contentDiv">
+            <div id="introDiv">
+                <h1>Contact us</h1>
+                <p></p>
+            </div>
+        </div>
     </body>
 </html>

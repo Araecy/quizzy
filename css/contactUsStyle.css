@@ -1,4 +1,22 @@
 body{
-    background-color: #1b0c1b;
+    background-image: url('../Images/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
+    min-width: 650px;
+}
+
+#contentDiv > div{
+    border-radius: 10px;
+    outline: black solid 2px;
+    background: rgb(94,26,26);
+    background: linear-gradient(90deg, rgba(94,26,26,1) 0%, rgba(185,54,50,1) 100%);
+    padding: 10px 12px;
+    margin: 20px 0 0 calc(50% - 320px);
+    max-width: 620px;
+}
+
+#contentDiv > div > h1{
+    margin: 0 0 10px 0;
 }

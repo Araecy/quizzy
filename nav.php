@@ -7,8 +7,8 @@
             <li><a class='dropdown-arrow'>Quizzy</a>
                 <ul class='sub-menus'>
                     <li><a href='./kewinsQuizzy.php'>Kewin's quizzy</a></li>
-                    <li><a href='./quizzy_duran.php'>Quizzy - Duran</a></li>
-                    <li><a href='./quizzy_noah.php'>Quizzy - Noah</a></li>
+                    <li><a href='./quizzy_duran.php'>Duran's quizzy</a></li>
+                    <li><a href='./quizzy_noah.php'>Noah's quizzy</a></li>
                 </ul>
             </li>
             <li><a href='./aboutUs.php'><li>About us</li></a></li>

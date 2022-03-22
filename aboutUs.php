@@ -19,14 +19,17 @@
             <!-- Duran's section: -->
             <div id="duransDiv">
                 <h1>Duran</h1>
+                <p>[Wat info over jezelf]</p>
             </div>
             <!-- Kewin's section: -->
             <div id="KewinsDiv">
                 <h1>Kewin</h1>
+                <p>Ik hou erg van programmeren, backend vind ik veel leuker dan frontend omdat ik design niet echt mijn ding vind</p>
             </div>
             <!-- Noah's section: -->
             <div id="NoahsDiv">
                 <h1>Noah</h1>
+                <p>[Wat info over jezelf]</p>
             </div>
         </div>
     </body>

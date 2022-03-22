@@ -1,12 +1,17 @@
 body{
+    background-image: url('../Images/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
-    background: rgb(52,15,15);
-    background: linear-gradient(90deg, rgba(52,15,15,1) 0%, rgba(129,37,34,1) 100%);
+    min-width: 650px;
 }
 
-#contentDiv{
-    width: 75%;
-    margin: 0 auto 0 auto;
+h1,
+p,
+div{
+    margin: 0;
+    padding: 0;
 }
 
 #contentDiv > div{
@@ -14,4 +19,11 @@ body{
     outline: black solid 2px;
     background: rgb(94,26,26);
     background: linear-gradient(90deg, rgba(94,26,26,1) 0%, rgba(185,54,50,1) 100%);
+    padding: 10px 12px;
+    margin: 20px 0 0 calc(50% - 320px);
+    max-width: 620px;
+}
+
+#contentDiv > div > h1{
+    margin: 0 0 10px 0;
 }

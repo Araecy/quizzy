@@ -1,6 +1,9 @@
 html,
 body{
-    background-color: #1b0c1b;
+    background-image: url('../Images/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: white;
     margin: 0;
     padding: 0;
@@ -13,20 +16,33 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: 1300px;
 }
 
 .divTop{grid-area: 1 / 1 / 2 / 6;}
-.divMiddle{grid-area: 2 / 2 / 4 / 5;}
 .divLeft{grid-area: 2 / 1 / 4 / 2;}
+.divMiddle{grid-area: 2 / 2 / 4 / 5;}
 .divRight{grid-area: 2 / 5 / 4 / 6;}
-.divBottom{grid-area: 4 / 1 / 6 / 6;}
+.divBottom{grid-area: 3 / 1 / 6 / 6;}
 
-.divTop,
-.divMiddle,
-.divLeft,
-.divRight,
-.divBottom{
-    border: 5px solid orangered;
+h1,
+p,
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.parent > div{
+    border-radius: 10px;
+    outline: black solid 2px;
+    background: rgb(94,26,26);
+    background: linear-gradient(90deg, rgba(94,26,26,1) 0%, rgba(185,54,50,1) 100%);
+    padding: 10px 12px;
+    height: 150px;
+}
+
+.parent > div > h1{
+    margin: 0 0 10px 0;
 }
