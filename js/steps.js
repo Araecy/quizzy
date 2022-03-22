@@ -47,8 +47,10 @@
 
 		// questions
 		this.questions = [].slice.call( this.el.querySelectorAll( 'ol.questions > li' ) );
+
 		// totaal questions
 		this.questionsCount = this.questions.length;
+
 		// eerste question
 		classie.addClass( this.questions[0], 'current' );
 
@@ -58,6 +60,7 @@
 
 		// progress bar
 		this.progress = this.el.querySelector( 'div.progress' );
+		
 		// set progressbar attributes
 		this.progress.setAttribute( 'role', 'progressbar' );
 		this.progress.setAttribute( 'aria-readonly', 'true' );
@@ -67,16 +70,20 @@
 
 		// question number status
 		this.questionStatus = this.el.querySelector( 'span.number' );
+
 		// give the questions status an id
 		this.questionStatus.id = this.questionStatus.id || randomID();
+
 		// associate "x / y" with the input via aria-describedby
 		for (let i = this.questions.length - 1; i >= 0; i--) {
 			let formElement = this.questions[i].querySelector( 'input, textarea, select' );
 			formElement.setAttribute( 'aria-describedby', this.questionStatus.id );
 		};
+
 		// huidige question placeholder
 		this.currentNum = this.questionStatus.querySelector( 'span.number-current' );
 		this.currentNum.innerHTML = Number( this.current + 6);
+
 		// totaal questions placeholder
 		this.totalQuestionNum = this.questionStatus.querySelector( 'span.number-total' );
 		this.totalQuestionNum.innerHTML = this.questionsCount + 5;
@@ -94,6 +101,7 @@
 		let self = this,
 			// first input
 			firstElInput = this.questions[ this.current ].querySelector( 'input, textarea, select' ),
+			
 			// focus
 			onFocusStartFn = function() {
 				firstElInput.removeEventListener( 'focus', onFocusStartFn );

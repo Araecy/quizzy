@@ -105,6 +105,11 @@ button:hover {
 
 #fout {
     width: 50%;
+    z-index: 1000;
+}
+#foutGoed{
+    width: 25%;
+    z-index: 1000;
 }
 
 
@@ -156,7 +161,8 @@ ol .questions {
 
 #Check {
     position: absolute;
-    right: 0;
+    top: 63% !important;
+    right: 21% !important;
     bottom: 2.15em;
     /* padding-bottom van plus progress bar hoogte */
     display: block;
@@ -176,6 +182,7 @@ ol .questions {
     transform: translateX(-20%);
     pointer-events: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    z-index: 1000;
 }
 
 #Check:hover {
@@ -216,6 +223,39 @@ ol .questions {
     display: none;
 }
 
+#main3 {
+    display: none;
+}
+
 #mainHidden {
     display: none;
+}
+
+#start {
+    margin-top: 25% !important;
+}
+
+#theQuiz {
+    margin-top: 25% !important;
+}
+#Begin {
+    margin-top: 25% !important;
+}
+
+.begin{
+    position: relative;
+    margin: 0 auto;
+    padding: 2em 0;
+    max-width: 860px;
+    width: 100%;
+    text-align: left;
+    font-size: 2.5em;
+}
+.bar {
+    position: absolute;
+    top: auto;
+    width: 100%;
+    height: inherit;
+    background: rgba(0, 0, 0, 0.05);
+    content: ' ';
 }
