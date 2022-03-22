@@ -1,5 +1,56 @@
 let score = 0;
 let checkIfAnswerd = 0;
+let checkIfAnswerdOpen = 0;
+let openVraagTeller = 0;
+
+function openAnswer(){
+  // Open vraag 1
+  if (document.getElementById("q1").value == "test"){
+    document.getElementById("title1").innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
+    document.getElementById("q1").style = "color: green; !important";
+    if (checkIfAnswerdOpen < 1){
+      if (score < 10){
+        score ++;
+      } checkIfAnswerd ++;
+    }
+    document.getElementById("Check").style = "display: none;"
+  } else{
+    document.getElementById("title1").innerHTML = `<img id="foutGoed" src="Images/wrong_Duran.gif" alt="">`;
+    document.getElementById("q1").style = "color: red; !important";
+    document.getElementById("Check").style = "display: none;"
+    if (checkIfAnswerd < 1){
+      checkIfAnswerdOpen ++;
+    }
+  }
+  // Open vraag 2
+  if (openVraagTeller = 1){
+  if (document.getElementById("q2").value == "test"){
+    document.getElementById("title2").innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
+    document.getElementById("q2").style = "color: green; !important";
+    if (checkIfAnswerdOpen < 1){
+      if (score < 10){
+        score ++;
+      } checkIfAnswerd ++;
+    }
+    document.getElementById("Check").style = "display: none;"
+  } else{
+    document.getElementById("title2").innerHTML = `<img id="foutGoed" src="Images/wrong_Duran.gif" alt="">`;
+    document.getElementById("q2").style = "color: red; !important";
+    document.getElementById("Check").style = "display: none;"
+    if (checkIfAnswerd < 1){
+      checkIfAnswerdOpen ++;
+      }
+    }
+  }
+}
+
+function openNext(){
+if (checkIfAnswerdOpen = 1){
+  document.getElementById("Check").style = "display: inline;";
+  checkIfAnswerdOpen --;
+  openVraagTeller ++;
+  }
+}
 
 function Answer(){
   document.getElementById("Answer").style='background-color: green;';
@@ -59,6 +110,21 @@ function answer3(){
 function Submit(){
   console.log(score+"/10");
 }
+//start quiz
+function start(){
+    let SwapOpen = document.getElementById("main3");
+    let oldOpen = document.getElementById("main"); 
+    SwapOpen.id = "main";
+    oldOpen.id = "main3";
+}
+//start vragen
+function startQuiz(){
+    let SwapOpen2 = document.getElementById("mainHidden");
+    let oldOpen2 = document.getElementById("main"); 
+    SwapOpen2.id = "main";
+    oldOpen2.id = "mainHidden";
+}
+
 // Switched naar vraag 2
 function next1(){
   if (checkIfAnswerd == 1){
@@ -88,7 +154,7 @@ function next1(){
     checkIfAnswerd --;
   }
   else {
-    window.alert('Vul eerst iets in voordat je erder gaat!')
+    window.alert('Vul eerst iets in voordat je verder gaat!')
   }
 }
 // Switched naar vraag 3
@@ -120,7 +186,7 @@ function next2(){
     checkIfAnswerd --;
   }
   else {
-    window.alert('Vul eerst iets in voordat je erder gaat!')
+    window.alert('Vul eerst iets in voordat je verder gaat!')
   }
 }
 // Switched naar vraag 4
@@ -151,7 +217,7 @@ function next3(){
   checkIfAnswerd --;
   }
   else {
-    window.alert('Vul eerst iets in voordat je erder gaat!')
+    window.alert('Vul eerst iets in voordat je verder gaat!')
   }
 }
 // Switched naar vraag 5
@@ -182,7 +248,7 @@ function next4(){
   checkIfAnswerd --;
   }
   else {
-    window.alert('Vul eerst iets in voordat je erder gaat!')
+    window.alert('Vul eerst iets in voordat je verder gaat!')
   }
 }
 // Switch 2 id's zodat de openvragen worden laten zien en de meerkeuze vragen worden weg gehaald
@@ -195,6 +261,6 @@ function next5(){
   checkIfAnswerd --;
   }
   else {
-    window.alert('Vul eerst iets in voordat je erder gaat!')
+    window.alert('Vul eerst iets in voordat je verder gaat!')
   }
 }

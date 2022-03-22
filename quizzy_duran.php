@@ -25,6 +25,62 @@
         </div>
     </header>
     <main id="main">
+    <center>
+            <div id="gif">
+                <div id="Answers">
+                <button onclick="start()" id="start">Start de quiz</button>
+                </div>
+        </center>
+    </main>
+    <main id="main3">
+    <center>
+            <div id="gif">
+                <div id="Answers">
+                <section>
+                <form id="theQuiz" class="simform">
+                    <div class="simform-inner">
+                        <ol class="questions">
+                            <li>
+                                <span><label for="Naam">Wat is jouw naam?</label></span>
+                                <input id="naam" name="naam" type="text" />
+                            </li>
+                        </ol>
+                        <!-- /questions -->
+                        <div class="controls">
+                            <button onclick="startQuiz()" id="next" class="next">Start quiz</button>
+                            <div class="progress"></div>
+                            <span class="number">
+                                        <span  class="number-current"></span>
+                            <span class="number-total"></span>
+                            </span>
+                            <span class="error-message"></span>
+                        </div>
+                    </div>
+                </form>
+                </div>
+                <link rel="stylesheet" type="text/css" href="css/component.css" />
+                <script src="js/Modernizer.js"></script>
+                <script src="js/class.js"></script>
+                <script src="js/steps.js"></script>
+                <script>
+                    var theQuiz = document.getElementById('theQuiz');
+                    //disable form autocomplete
+                    theQuiz.setAttribute("autocomplete", "off");
+
+                    new stepsForm(theQuiz, {
+                        onSubmit: function(form) {
+                            // verberg form
+                            classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
+                            var messageEl = theQuiz.querySelector('.final-message');
+                            messageEl.innerHTML = 'Tanks for doing the quiz.';
+                            classie.addClass(messageEl, 'show');
+                        }
+                    });
+                </script>
+                </div>
+        </center>
+    </main>
+    <main id="mainHidden">
         <center>
             <h2>Which movie won the Academy Award for Best Picture?</h2>
             <h4>1/10<strong onclick="next1()">></strong></h4>
@@ -51,34 +107,34 @@
                 <div id="quiz1"></div>
                 <div id="Answers">
                     <section>
+                    <button onclick="openAnswer()" class="show" id="Check">&check;</button>
                         <form id="theQuiz" class="simform">
                             <div class="simform-inner">
                                 <ol class="questions">
                                     <li>
-                                        <span><label for="q1">Openvraag?</label></span>
+                                        <span><label id="title1" for="q1">Openvraag?</label></span>
                                         <input id="q1" name="q1" type="text" />
                                     </li>
                                     <li>
-                                        <span><label for="q2">Openvraag2?</label></span>
+                                        <span><label id="title2" for="q2">Openvraag2?</label></span>
                                         <input id="q2" name="q2" type="text" />
                                     </li>
                                     <li>
-                                        <span><label for="q3">Openvraag3?</label></span>
+                                        <span><label id="title3" for="q3">Openvraag3?</label></span>
                                         <input id="q3" name="q3" type="text" />
                                     </li>
                                     <li>
-                                        <span><label for="q4">openvraag4?</label></span>
+                                        <span><label id="title4" for="q4">openvraag4?</label></span>
                                         <input id="q4" name="q4" type="text" />
                                     </li>
                                     <li>
-                                        <span><label for="q5">openvraag5?</label></span>
+                                        <span><label id="title5" for="q5">openvraag5?</label></span>
                                         <input id="q5" name="q5" type="text" />
                                     </li>
                                 </ol>
                                 <!-- /questions -->
                                 <div class="controls">
-                                    <button onclick="Answer()" class="show" id="Check">&check;</button>
-                                    <button id="next" class="next">Next question</button>
+                                    <button onclick="openNext()" id="next" class="next">Next question</button>
                                     <div class="progress"></div>
                                     <span class="number">
                                         <span class="number-current"></span>
