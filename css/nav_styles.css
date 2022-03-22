@@ -6,7 +6,8 @@ body{
 }
 
 #menuParent{
-	background: #EE4540;
+	background: rgb(158,43,43);
+	background: linear-gradient(90deg, rgba(158,43,43,1) 0%, rgba(238,69,64,1) 100%);
     box-shadow: 0px 4px 0px 0px #C72C41;
     -webkit-box-shadow: 0px 4px 0px 0px #C72C41;
 }
@@ -18,7 +19,6 @@ body{
 	color: #FFF;
 	font-weight: 600;
 	height: 60px;
-	padding-left: 18px;
 	border-radius: 0px;
 }
 

@@ -10,5 +10,24 @@
     </head>
     <body>
         <?php include './nav.php'?>
+        <div id="contentDiv">
+            <!-- Introduction div: -->
+            <div id="introDiv">
+                <h1>Quizzy | About us</h1>
+                <p>Made by Duran, Kewin and Noah.</p>
+            </div>
+            <!-- Duran's section: -->
+            <div id="duransDiv">
+                <h1>Duran</h1>
+            </div>
+            <!-- Kewin's section: -->
+            <div id="KewinsDiv">
+                <h1>Kewin</h1>
+            </div>
+            <!-- Noah's section: -->
+            <div id="NoahsDiv">
+                <h1>Noah</h1>
+            </div>
+        </div>
     </body>
 </html>

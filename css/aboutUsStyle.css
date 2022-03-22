@@ -1,4 +1,17 @@
 body{
-    background-color: black;
     color: white;
+    background: rgb(52,15,15);
+    background: linear-gradient(90deg, rgba(52,15,15,1) 0%, rgba(129,37,34,1) 100%);
+}
+
+#contentDiv{
+    width: 75%;
+    margin: 0 auto 0 auto;
+}
+
+#contentDiv > div{
+    border-radius: 10px;
+    outline: black solid 2px;
+    background: rgb(94,26,26);
+    background: linear-gradient(90deg, rgba(94,26,26,1) 0%, rgba(185,54,50,1) 100%);
 }
