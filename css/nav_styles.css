@@ -1,35 +1,56 @@
 @import url(./variables.css);
 
-body {
-    background-color: #2d142c;
+body{
     margin: 0 !important;
     padding: 0 !important;
 }
-#menu {
-	font-family: var(--font-family-sans-serif) !important;
-    -webkit-box-shadow: 0px 4px 0px 0px #C72C41; 
-    box-shadow: 0px 4px 0px 0px #C72C41;    
+
+#menuParent{
 	background: #EE4540;
+    box-shadow: 0px 4px 0px 0px #C72C41;
+    -webkit-box-shadow: 0px 4px 0px 0px #C72C41;
+}
+
+#menu{
+	width: 75%;
+	margin: 0 auto 0 auto;
+	font-family: var(--font-family-sans-serif) !important;
 	color: #FFF;
 	font-weight: 600;
 	height: 60px;
 	padding-left: 18px;
 	border-radius: 0px;
 }
-#menu ul, #menu li {
+
+#menu ul,
+#menu li{
 	margin: 0 auto;
 	padding: 0;
 	list-style: none
 }
-#menu ul {
+
+#menu ul{
 	width: 100%;
 }
-#menu li {
+
+#menu li{
 	float: left;
 	display: inline;
 	position: relative;
 }
-#menu a {
+
+#menu > ul > li:nth-of-type(1){
+	width: 130px;
+}
+
+#menu > ul > li > p{
+	margin: -2px 0 0 0;
+	width: 130px;
+	height: 55px;
+	font-size: 40px;
+}
+
+#menu a{
 	display: block;
 	line-height: 60px;
 	padding: 0 14px;
@@ -37,15 +58,18 @@ body {
 	color: #FFFFFF;
 	font-size: 16px;
 }
-#menu a.dropdown-arrow:after {
+
+#menu a.dropdown-arrow:after{
 	content: "\25BE";
 	margin-left: 5px;
 }
-#menu li a:hover {
+
+#menu li a:hover{
 	color: #0099CC;
 	background: #F2F2F2;
 }
-#menu input {
+
+#menu input{
 	display: none;
 	margin: 0;
 	padding: 0;
@@ -54,18 +78,21 @@ body {
 	opacity: 0;
 	cursor: pointer
 }
-#menu label {
+
+#menu label{
 	display: none;
 	line-height: 60px;
 	text-align: center;
 	position: absolute;
 	left: 35px
 }
-#menu label:before {
+
+#menu label:before{
 	font-size: 1.6em;
 	content: "\2261"; 
 	margin-left: 20px;
 }
+
 #menu ul.sub-menus{
 	height: auto;
 	overflow: hidden;
@@ -75,21 +102,26 @@ body {
 	z-index: 99;
 	display: none;
 }
-#menu ul.sub-menus li {
+
+#menu ul.sub-menus li{
 	display: block;
 	width: 100%;
 }
-#menu ul.sub-menus a {
+
+#menu ul.sub-menus a{
 	color: #FFFFFF;
 	font-size: 16px;
 }
-#menu li:hover ul.sub-menus {
+
+#menu li:hover ul.sub-menus{
 	display: block
 }
+
 #menu ul.sub-menus a:hover{
 	background: #F2F2F2;
 	color: #444444;
 }
+
 @media screen and (max-width: 800px){
 	#menu {position:relative}
 	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
@@ -102,5 +134,3 @@ body {
 	#menu input:checked + label:before {content:"\00d7"}
 	#menu input:checked ~ ul {display:block}
 }
-
-	
