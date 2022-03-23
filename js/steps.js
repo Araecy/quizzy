@@ -79,14 +79,14 @@
 			let formElement = this.questions[i].querySelector( 'input, textarea, select' );
 			formElement.setAttribute( 'aria-describedby', this.questionStatus.id );
 		};
-
+		
 		// huidige question placeholder
 		this.currentNum = this.questionStatus.querySelector( 'span.number-current' );
 		this.currentNum.innerHTML = Number( this.current + 6);
 
 		// totaal questions placeholder
 		this.totalQuestionNum = this.questionStatus.querySelector( 'span.number-total' );
-		this.totalQuestionNum.innerHTML = this.questionsCount + 5;
+		this.totalQuestionNum.innerHTML = this.questionsCount + 4;
 
 		// error message
 		this.error = this.el.querySelector( 'span.error-message' );
