@@ -35,7 +35,12 @@
             <!-- Noah's section: -->
             <div id="NoahsDiv">
                 <h1>Noah</h1>
-                <p>[Wat info over jezelf]</p>
+                <p>
+                    Hou ik ben Noah (18+). Ik studeer momenteel op het Grafisch Lyceum.
+                    <br>
+                    Ik kan HTML, CSS, JS en een beetje CS en PHP.
+
+                </p>
             </div>
         </div>
     </body>
