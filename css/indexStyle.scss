@@ -1,0 +1,50 @@
+@import './_variables.scss';
+
+html,
+body{
+    background-image: url('../Images/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: $font-family-sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* grid */
+.parent{
+    width: 90%;
+    margin: 50px auto 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: 90vw;
+}
+
+.divTop{grid-area: 1 / 1 / 2 / 6;}
+.divLeft{grid-area: 2 / 1 / 4 / 2;}
+.divMiddle{grid-area: 2 / 2 / 4 / 5;}
+.divRight{grid-area: 2 / 5 / 4 / 6;}
+.divBottom{grid-area: 3 / 1 / 6 / 6;}
+
+h1,
+p,
+div{
+    margin: 0;
+    padding: 0;
+}
+
+.parent > div{
+    border-radius: 10px;
+    outline: white solid 2px;
+    background: $gradient-right-opacity;
+    padding: 10px 12px;
+    height: 250px;
+}
+
+.parent > div > h1{
+    margin: 0 0 10px 0;
+}

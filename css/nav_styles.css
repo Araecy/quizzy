@@ -1,10 +1,10 @@
+@charset "UTF-8";
 body {
   margin: 0 !important;
   padding: 0 !important;
 }
 
 #menuParent {
-  background: -webkit-gradient(linear, right top, left top, from(#10002bff), color-stop(#240046ff), color-stop(#3c096cff), color-stop(#5a189aff), color-stop(#7b2cbfff), color-stop(#9d4eddff), color-stop(#c77dffff), to(#e0aaffff));
   background: linear-gradient(270deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
   box-shadow: 0px 2px 0px 0px white !important;
   -webkit-box-shadow: 0px 2px 0px 0px white !important;
@@ -58,7 +58,7 @@ body {
 }
 
 #menu a.dropdown-arrow:after {
-  content: "\25BE";
+  content: "▾";
   margin-left: 5px;
 }
 
@@ -87,7 +87,7 @@ body {
 
 #menu label:before {
   font-size: 1.6em;
-  content: "\2261";
+  content: "≡";
   margin-left: 20px;
 }
 
@@ -95,7 +95,6 @@ body {
   height: auto;
   overflow: hidden;
   width: 170px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#10002bff), color-stop(#240046ff), color-stop(#3c096cff), color-stop(#5a189aff), color-stop(#7b2cbfff), color-stop(#9d4eddff), color-stop(#c77dffff), to(#e0aaffff));
   background: linear-gradient(0deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
   position: absolute;
   z-index: 99;
@@ -125,6 +124,7 @@ body {
   #menu {
     position: relative;
   }
+
   #menu ul {
     background: #111;
     position: absolute;
@@ -135,35 +135,43 @@ body {
     height: auto;
     display: none;
   }
+
   #menu ul.sub-menus {
     width: 100%;
     position: static;
   }
+
   #menu ul.sub-menus a {
     padding-left: 30px;
   }
+
   #menu li {
     display: block;
     float: none;
     width: auto;
   }
+
   #menu input,
-  #menu label {
+#menu label {
     position: absolute;
     top: 0;
     left: 0;
     display: block;
   }
+
   #menu input {
     z-index: 4;
   }
+
   #menu input:checked + label {
     color: white;
   }
+
   #menu input:checked + label:before {
-    content: "\00d7";
+    content: "×";
   }
+
   #menu input:checked ~ ul {
     display: block;
   }
-}
+}/*# sourceMappingURL=nav_styles.css.map */

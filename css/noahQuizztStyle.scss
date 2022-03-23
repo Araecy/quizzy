@@ -10,6 +10,7 @@ body {
   background-color: $backgroundColor !important;
   background-image: url("../images/osuBackground.jpg") !important;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   color: $textColor;
   font-family: $font-family-monospace;
