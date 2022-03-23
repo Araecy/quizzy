@@ -25,56 +25,14 @@
     </header>
     <main id="main">
         <center>
-             <div id="gif">
-                <div id="quiz1"></div>
-                <div id="Answers">
-                <section>
-        <form id="Begin" class="begin">
-                    <div class="begin-inner">
-                        <ol class="questions">
-                            <li>
-                                <span><label for="Naam">Wat is jouw naam?</label></span>
-                                <input id="naam" name="naam" type="text" />
-                            </li>
-                        </ol>
-                        <!-- /questions -->
-                        <div class="controls">
-                            <button onclick="startQuiz()" id="next" class="next">Start quiz</button>
-                            <div class="Bar"></div>
-                            <span class="number">
-                                        <span  class="number-current"></span>
-                            <span class="number-total"></span>
-                            </span>
-                            <span class="error-message"></span>
-                        </div>
-                    </div>
-                </form>
-                </div>
-                <link rel="stylesheet" type="text/css" href="css/component.css" />
-                <script src="js/Modernizer.js"></script>
-                <script src="js/class.js"></script>
-                <script src="js/steps.js"></script>
-                <script>
-                    var Begin = document.getElementById('Begin');
-                    //disable form autocomplete
-                    Begin.setAttribute("autocomplete", "off");
-
-                    new stepsForm(Begin, {
-                        onSubmit: function(form) {
-                            // verberg form
-                            classie.addClass(Begin.querySelector('.begin-inner'), 'hide');
-                            var messageEl = Begin.querySelector('.final-message');
-                            messageEl.innerHTML = 'Tanks for doing the quiz.';
-                            classie.addClass(messageEl, 'show');
-                        }
-                    });
-                </script>
-                </div>
-                <div id="bottom">
-                </div>
-                <div id="quiz2"></div>
-                </div>
-                <div id="results"></div>
+            <h1 id="Eindresultaat" ;="">
+                <p>Gefeliciteerd je hebt de quiz afgerond!</p>
+                <img src="Images/correct_Duran.gif" width="10%" alt="">
+                <br>
+            <img src="Images/Duran_Punten_logo.png" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" width="2%" style="opacity: 0.5;" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: 0.5;" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: 0.5;" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: 0.5;" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: 0.3;" width="2%" alt="">
+            <br>
+                Goed gedaan rick! Je hebt 5 van de 10 punten behaald.
+            </h1>
         </center>
     </main>
     <footer>

@@ -101,7 +101,7 @@
                                 <!-- / controls -->
                             </div>
                             <!-- /simform-inner -->
-                            <span class="final-message"></span>
+                            <span onchange="Calc()" class="final-message"></span>
                         </form>
                         <!-- /simform -->
                 </div>
@@ -119,11 +119,11 @@
                             classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
                             var messageEl = theQuiz.querySelector('.final-message');
                             messageEl.innerHTML = 
-                            'Thanks for doing the quiz ' + score + "/10";
+                           `<h1 onclick="submitQuiz()" id="resultaat">Klik hier voor resultaat!</h1>`;
                             classie.addClass(messageEl, 'show');
                         }
                     });
-                </script>
+                </script> 
             </div>
             <div id="bottom">
             </div>
@@ -131,6 +131,9 @@
             </div>
             <div id="results"></div>
         </center>
+    </main>
+    <main id="bottomMain">
+        
     </main>
     <footer>
 
