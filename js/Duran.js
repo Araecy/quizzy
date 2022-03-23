@@ -274,7 +274,11 @@ function submitQuiz() {
   <br>
   <img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity1};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity2};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity3};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity4};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity5};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity6};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity7};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity8};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity9};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity10};" width="2%" alt="">
   <br>
-  ${goedFoutGedaan} ${naam}! Je hebt ${totalScore} van de 10 punten behaald.</center></h1>`;
+  ${goedFoutGedaan} ${naam}! Je hebt ${totalScore} van de 10 punten behaald.</center></h1>
+  <center>
+  <a href='./index.php'><button>Terug Home</button></a>
+</center>
+  `;
 }
 //meerkeuze vragen
 function Answer() {
