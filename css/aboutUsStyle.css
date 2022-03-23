@@ -1,29 +1,29 @@
-body{
-    background-image: url('../Images/backgroundImage.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    min-width: 650px;
+body {
+  background-image: url("../Images/backgroundImage.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  min-width: 650px;
 }
 
 h1,
 p,
-div{
-    margin: 0;
-    padding: 0;
+div {
+  margin: 0;
+  padding: 0;
 }
 
-#contentDiv > div{
-    border-radius: 10px;
-    outline: black solid 2px;
-    background: rgb(94,26,26);
-    background: linear-gradient(90deg, rgba(94,26,26,1) 0%, rgba(185,54,50,1) 100%);
-    padding: 10px 12px;
-    margin: 20px 0 0 calc(50% - 320px);
-    max-width: 620px;
+#contentDiv > div {
+  outline: white solid 2px;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  margin: 20px 0 0 calc(50% - 320px);
+  background: linear-gradient(45deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+  border-radius: 10px;
+  padding: 10px 12px;
+  max-width: 620px;
 }
 
-#contentDiv > div > h1{
-    margin: 0 0 10px 0;
+#contentDiv > div > h1 {
+  margin: 0 0 10px 0;
 }

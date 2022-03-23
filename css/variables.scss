@@ -1,0 +1,31 @@
+$font-family-sans-serif: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+$russian-violet: #10002bff;
+$russian-violet-2: #240046ff;
+$persian-indigo: #3c096cff;
+$purple: #5a189aff;
+$french-violet: #7b2cbfff;
+$amethyst: #9d4eddff;
+$heliotrope: #c77dffff;
+$mauve: #e0aaffff;
+
+$gradient-top: linear-gradient(0deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-right: linear-gradient(90deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-bottom: linear-gradient(180deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-left: linear-gradient(270deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-top-right: linear-gradient(45deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-bottom-right: linear-gradient(135deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-top-left: linear-gradient(225deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-bottom-left: linear-gradient(315deg, #10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+$gradient-radial: radial-gradient(#10002bff, #240046ff, #3c096cff, #5a189aff, #7b2cbfff, #9d4eddff, #c77dffff, #e0aaffff);
+
+$gradient-top-opacity: linear-gradient(0deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-right-opacity: linear-gradient(90deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-bottom-opacity: linear-gradient(180deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-left-opacity: linear-gradient(270deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-top-right-opacity: linear-gradient(45deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-bottom-right-opacity: linear-gradient(135deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-top-left-opacity: linear-gradient(225deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-bottom-left-opacity: linear-gradient(315deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+$gradient-radial-opacity: radial-gradient(#10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);

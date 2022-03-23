@@ -59,8 +59,8 @@ body {
 #buttonDiv > button:hover,
 #answerButtonsDiv > button:hover,
 #previousAndNextQuestionButtonsDiv > button:hover {
-  -webkit-box-shadow: inset 0px 0px 10px 0px #90ee90;
-          box-shadow: inset 0px 0px 10px 0px #90ee90;
+  -webkit-box-shadow: inset 0px 0px 10 px 0px #90ee90;
+          box-shadow: inset 0px 0px 10 px 0px #90ee90;
   color: #00ffff;
 }
 
