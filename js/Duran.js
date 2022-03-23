@@ -36,7 +36,7 @@ function openAnswer() {
   }
   // Open vraag 2
   if (openVraagTeller == 1) {
-    if (document.getElementById("q2").value == "test") {
+    if (document.getElementById("q2").value == "Frodo") {
       document.getElementById(
         "title2"
       ).innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
@@ -58,7 +58,7 @@ function openAnswer() {
   }
   // Open vraag 3
   if (openVraagTeller == 2) {
-    if (document.getElementById("q3").value == "test") {
+    if (document.getElementById("q3").value == "Durins Folk") {
       document.getElementById(
         "title3"
       ).innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
@@ -80,7 +80,7 @@ function openAnswer() {
   }
   // Open vraag 4
   if (openVraagTeller == 3) {
-    if (document.getElementById("q4").value == "test") {
+    if (document.getElementById("q4").value == "Elrond") {
       document.getElementById(
         "title4"
       ).innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
@@ -102,7 +102,7 @@ function openAnswer() {
   }
   // Open vraag 5
   if (openVraagTeller == 4) {
-    if (document.getElementById("q5").value == "test") {
+    if (document.getElementById("q5").value == "The Prancing Pony") {
       document.getElementById(
         "title5"
       ).innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
@@ -127,34 +127,28 @@ function openAnswer() {
 
 function openNext() {
   // punten teller
-  if (document.getElementById("q1").value == "test") {
+  if (document.getElementById("q1").value == "Gandalf") {
     scoreOpen1 = 1;
 
-    console.log(scoreOpen1);
   }
-  if (document.getElementById("q2").value == "test") {
+  if (document.getElementById("q2").value == "Frodo") {
     scoreOpen2 = 1;
 
-    console.log(scoreOpen2);
   }
-  if (document.getElementById("q3").value == "test") {
+  if (document.getElementById("q3").value == "Durins Folk") {
     scoreOpen3 = 1;
 
-    console.log(scoreOpen3);
   }
-  if (document.getElementById("q4").value == "test") {
+  if (document.getElementById("q4").value == "Elrond") {
     scoreOpen4 = 1;
 
-    console.log(scoreOpen4);
   }
-  if (document.getElementById("q5").value == "test") {
+  if (document.getElementById("q5").value == "The Prancing Pony") {
     scoreOpen5 = 1;
 
-    console.log(scoreOpen5);
   }
 
   scoreOpen = scoreOpen1 + scoreOpen2 + scoreOpen3 + scoreOpen4 + scoreOpen5;
-  console.log(scoreOpen);
 
   if ((checkIfAnswerdOpen = 1)) {
     document.getElementById("Check").style = "display: inline;";
@@ -281,7 +275,6 @@ function submitQuiz() {
   <img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity1};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity2};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity3};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity4};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity5};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity6};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity7};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity8};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity9};" width="2%" alt=""><img src="Images/Duran_Punten_logo.png" style="opacity: ${opacity10};" width="2%" alt="">
   <br>
   ${goedFoutGedaan} ${naam}! Je hebt ${totalScore} van de 10 punten behaald.</center></h1>`;
-  console.log(totalScore);
 }
 //meerkeuze vragen
 function Answer() {
@@ -428,15 +421,15 @@ function next3() {
   if (checkIfAnswerd == 1) {
     document.getElementById("main").innerHTML = `
   <center>
-  <h2>idk?</h2>
+  <h2>Wie had de Ring na Sauron?</h2>
   <h4><strong><</strong>4/10<strong onclick="next4()">></strong></h4>
   
    <div id="gif">
       <div id="quiz1"></div>
       <div id="Answers">
-        <button onclick="answer2()" id="answer2">a)Anaheim</button> <button onclick="answer1()" id="answer1">b)Glendale</button>
+        <button onclick="answer2()" id="answer2">a)Elrond</button> <button onclick="answer1()" id="answer1">b)Gollum</button>
         <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="Answer()" id="Answer">d)Hamilton</button>
+        <button onclick="answer3()" id="answer3">c)Morgul</button> <button onclick="Answer()" id="Answer">d)Isildur</button>
       </div>
 
       <div id="bottom">
@@ -457,15 +450,15 @@ function next4() {
   if (checkIfAnswerd == 1) {
     document.getElementById("main").innerHTML = `
   <center>
-  <h2>idk2?</h2>
+  <h2>Hoe heet het paard van Gandalf?</h2>
   <h4><strong><</strong>5/10<strong onclick="next5()">></strong></h4>
   
    <div id="gif">
       <div id="quiz1"></div>
       <div id="Answers">
-        <button onclick="answer2()" id="answer2">a)Anaheim</button> <button onclick="Answer()" id="Answer">b)Glendale</button>
+        <button onclick="answer2()" id="answer2">a)Shadowmane</button> <button onclick="Answer()" id="Answer">b)Shadowfax</button>
         <br>
-        <button onclick="answer3()" id="answer3">c)Alexander Farm</button> <button onclick="answer1()" id="answer1">d)Hamilton</button>
+        <button onclick="answer3()" id="answer3">c)Hasufel</button> <button onclick="answer1()" id="answer1">d)Celeborn</button>
       </div>
       <div id="bottom">
 

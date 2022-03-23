@@ -68,19 +68,19 @@
                                         <input id="q1" name="q1" type="text" />
                                     </li>
                                     <li>
-                                        <span><label id="title2" for="q2">Who is the main protagonist from the hobbits?</label></span>
+                                        <span><label id="title2" for="q2">Wie is de main protagonist van de hobbits?</label></span>
                                         <input id="q2" name="q2" type="text" />
                                     </li>
                                     <li>
-                                        <span><label id="title3" for="q3">Openvraag3?</label></span>
+                                        <span><label id="title3" for="q3">Wat is een andere benaming voor de dwergen?</label></span>
                                         <input id="q3" name="q3" type="text" />
                                     </li>
                                     <li>
-                                        <span><label id="title4" for="q4">openvraag4?</label></span>
+                                        <span><label id="title4" for="q4">Wie zei “You shall be the Fellowship of the Ring.”?</label></span>
                                         <input id="q4" name="q4" type="text" />
                                     </li>
                                     <li>
-                                        <span><label id="title5" for="q5">openvraag5?</label></span>
+                                        <span><label id="title5" for="q5">In welke herberg ontmoet Aragorn de Hobbits?</label></span>
                                         <input id="q5" name="q5" type="text" />
                                     </li>
                                     <li>
