@@ -19,7 +19,11 @@
             <!-- Duran's section: -->
             <div id="duransDiv">
                 <h1>Duran</h1>
-                <p>[Wat info over jezelf]</p>
+                <p>Ik ben Duran 16+. Ik ben momenteel bezig met de studie op het GLR voor software Development 
+                 <br>
+                 <br>
+                 Ik ben op dit moment C# en php aan het leren. Ik ben ook bezig met Vr gamedevelopment en 3 moddeling.
+                </p>
             </div>
             <!-- Kewin's section: -->
             <div id="KewinsDiv">
