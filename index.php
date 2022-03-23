@@ -17,7 +17,7 @@
                 <p> <I> <b>made by duran</b> </I></p>
                 <h4>
                     Kleine introductie quizzy LOTR:
-                    It began with the forging of the Great Rings. Three were given to the Elves, immortal, wisest and fairest of all beings. Seven to the Dwarf-Lords, great miners and craftsmen of the mountain halls. And nine, nine rings were gifted to the race of Men, who above all else desire power.
+                    Het begon met het smeden van de Grote Ringen. Drie werden aan de Elfen gegeven, onsterfelijk, wijs en eerlijk van alle wezens. Seven voor de Dwarf-Lords, grote mijnwerkers en ambachtslieden van de berghallen. En negen, negen ringen werden geschonken aan het ras van mannen, die boven alles naar macht verlangen.
                 </h4>
             </div>
             <div class="divLeft">
