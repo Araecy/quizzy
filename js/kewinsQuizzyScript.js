@@ -204,6 +204,7 @@ function question(questionNumber){
             <button class="previousQuestionButton" onclick="question(${questionNumber - 1})">Previous Question</button>
         </div>
         <div id="summaryButtonDiv">
+            <p>Naam (optioneel): </p><input id="naamInput" type="text">
             <button onclick="summary()">Verstuur</button>
         </div>
         `;
@@ -257,16 +258,32 @@ function addAnswerGiven(questionNumberGlobal){
 }
 
 function summary(){
-    document.getElementById("firstDiv").innerHTML = `
-        <h1>Kewin's quizzy | MR.Robot</h1>
-        <h1 class="centerText">Resultaat</h1>
-        <div id="endScorePDiv">
-        <p class="centerText" id="endScoreP">Eindscore: <br><br></p>
-        </div>
-        <div id="scorePointsDiv">
-
-        </div>
+    let naam = document.getElementById("naamInput").value;
+    if(naam != ""){
+        document.getElementById("firstDiv").innerHTML = `
+            <h1>Kewin's quizzy | MR.Robot</h1>
+            <h1 class="centerText">Resultaat</h1>
+            <div id="endScorePDiv">
+                <p>Naam: ${naam}</p>
+                <p class="centerText" id="endScoreP">Eindscore: <br><br></p>
+            </div>
+            <div id="scorePointsDiv">
+    
+            </div>
         `;
+    }
+    else{
+        document.getElementById("firstDiv").innerHTML = `
+            <h1>Kewin's quizzy | MR.Robot</h1>
+            <h1 class="centerText">Resultaat</h1>
+            <div id="endScorePDiv">
+                <p class="centerText" id="endScoreP">Eindscore: <br><br></p>
+            </div>
+            <div id="scorePointsDiv">
+
+            </div>
+        `;
+    }
     for(i = 0; i < score; i++){
         document.getElementById("scorePointsDiv").innerHTML += `
             <img src="Images/kewinsQuizzyScorePoint.png"></img>
