@@ -27,7 +27,7 @@
                 <p>
                     Ik hou erg van programeren, backend vind ik veel leuker dan frontend omdat ik design niet echt mijn ding vind.
                     <br>
-                    Ik kan op dit moment coderen in HTML, CSS, JS en C#.
+                    Ik kan op dit moment coderen in Python, HTML, CSS, JS, PHP en C#.
                     <br>
                     
                 </p>

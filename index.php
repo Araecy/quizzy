@@ -23,23 +23,28 @@
             </h4>
         </div>
         <div class="divLeft">
-            <center>
-                <a href='./quizzy_duran.php'><button>Start quiz</button></a>
-            </center>
+                <a class="startQuizA" href='./quizzy_duran.php'><button class="startQuizButton">Start quiz</button></a>
         </div>
         <div class="divMiddle">
         osu! is a free-to-play rhythm game primarily developed, published, and created by Dean "peppy" Herbert. Inspired by iNiS' rhythm game Osu! Tatakae! Ouendan, it was written in C# on the .NET framework, and was released for Microsoft Windows on 16 September 2007.
         </div>
         <div class="divRight">
-            <center>
-                <a href='./quizzy_noah.php'><button>Start quiz</button></a>
-            </center>
+                <a class="startQuizA" href='./quizzy_noah.php'><button class="startQuizButton">Start quiz</button></a>
         </div>
         <div class="divBottom">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui, voluptatibus doloremque saepe ipsam, repellendus porro tempora praesentium veniam magni natus placeat aliquam fugiat minus. Neque temporibus repellat natus libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic facere nulla delectus quia ipsam debitis suscipit! Nobis aut hic necessitatibus delectus quae, possimus ipsa, nostrum facere minus maiores id?
+            <h1>Mr. Robot Quizzy</h1>
+            <p><I><b>Made by Kewin</b></I></p>
+            <br>
+            <p>
+                <b>
+                    Mijn quizzy gaat over het filmserie genaamd: Mr. Robot. Alle vragen kan je makkelijk beantwoorden als je de hele filmserie hebt gekeken. Ik raad deze serie echt heel erg aan voor de mensen die "hacken" en zulke soort dingen leuk vinden.
+                    <br>
+                    Het filmserie gaat over een jongen die de grootste big tech company genaamd: "E Corp" kapot wil maken door de aantal data dat zij van mensen oppakken en verkopen.
+                </b>
+            </p>
         </div>
         <div class="div6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui, voluptatibus doloremque saepe ipsam, repellendus porro tempora praesentium veniam magni natus placeat aliquam fugiat minus. Neque temporibus repellat natus libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic facere nulla delectus quia ipsam debitis suscipit! Nobis aut hic necessitatibus delectus quae, possimus ipsa, nostrum facere minus maiores id?
+            <a class="startQuizA" href='./kewinsQuizzy.php'><button class="startQuizButton">Start quiz</button></a>
         </div>
     </div>
 </body>
