@@ -13,7 +13,7 @@
         <div id="contentDiv">
             <!-- Introduction div: -->
             <div id="introDiv">
-                <h1>Quizzy | About us</h1>
+                <h1>About us</h1>
                 <p>Made by Duran, Kewin and Noah.</p>
             </div>
             <!-- Duran's section: -->
@@ -24,7 +24,13 @@
             <!-- Kewin's section: -->
             <div id="KewinsDiv">
                 <h1>Kewin</h1>
-                <p>Ik hou erg van programmeren, backend vind ik veel leuker dan frontend omdat ik design niet echt mijn ding vind</p>
+                <p>
+                    Ik hou erg van programeren, backend vind ik veel leuker dan frontend omdat ik design niet echt mijn ding vind.
+                    <br>
+                    Ik kan op dit moment coderen in HTML, CSS, JS en C#.
+                    <br>
+                    
+                </p>
             </div>
             <!-- Noah's section: -->
             <div id="NoahsDiv">

@@ -13,7 +13,9 @@
         <div id="contentDiv">
             <div id="introDiv">
                 <h1>Contact us</h1>
-                <p></p>
+                <p>E-Mail: support@quizzy.nl</p>
+                <p>Telephone number: 06 735 285 624</p>
+                <p>Address: Netherlands Rotterdam boomlaan 42</p>
             </div>
         </div>
     </body>
