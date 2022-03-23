@@ -67,7 +67,7 @@ button {
 }
 
 button:hover {
-    background-color: #38a;
+    background-color: #38a !important;
 }
 
 .quiz-container {
@@ -161,8 +161,8 @@ ol .questions {
 
 #Check {
     position: absolute;
-    top: 63% !important;
-    right: 21% !important;
+    top: 168.5% !important;
+    right: 28% !important;
     bottom: 2.15em;
     /* padding-bottom van plus progress bar hoogte */
     display: block;
@@ -170,7 +170,7 @@ ol .questions {
     width: 2em !important;
     height: 2em !important;
     border: none;
-    background-color: rgb(167, 154, 135) !important;
+    background-color: rgb(167, 154, 135);
     color: rgba(0, 0, 0, 0.4) !important;
     text-align: center;
     opacity: 0;

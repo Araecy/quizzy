@@ -1,0 +1,31 @@
+@import './_variables.scss';
+
+body{
+    background-image: url('../Images/backgroundImage.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    min-width: 650px;
+}
+
+h1,
+p,
+div{
+    margin: 0;
+    padding: 0;
+}
+
+#contentDiv > div{
+    outline: rgb(255, 255, 255) solid 2px;
+    font-family: $font-family-sans-serif;
+    margin: 20px 0 0 calc(50% - 320px);
+    background: $gradient-top-right-opacity;
+    border-radius: 10px;
+    padding: 10px 12px;
+    max-width: 620px;
+}
+
+#contentDiv > div > h1{
+    margin: 0 0 10px 0;
+}

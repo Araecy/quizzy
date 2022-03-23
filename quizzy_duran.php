@@ -25,58 +25,10 @@
         </div>
     </header>
     <main id="main">
-    <center>
+        <center>
             <div id="gif">
                 <div id="Answers">
-                <button onclick="start()" id="start">Start de quiz</button>
-                </div>
-        </center>
-    </main>
-    <main id="main3">
-    <center>
-            <div id="gif">
-                <div id="Answers">
-                <section>
-                <form id="theQuiz" class="simform">
-                    <div class="simform-inner">
-                        <ol class="questions">
-                            <li>
-                                <span><label for="Naam">Wat is jouw naam?</label></span>
-                                <input id="naam" name="naam" type="text" />
-                            </li>
-                        </ol>
-                        <!-- /questions -->
-                        <div class="controls">
-                            <button onclick="startQuiz()" id="next" class="next">Start quiz</button>
-                            <div class="progress"></div>
-                            <span class="number">
-                                        <span  class="number-current"></span>
-                            <span class="number-total"></span>
-                            </span>
-                            <span class="error-message"></span>
-                        </div>
-                    </div>
-                </form>
-                </div>
-                <link rel="stylesheet" type="text/css" href="css/component.css" />
-                <script src="js/Modernizer.js"></script>
-                <script src="js/class.js"></script>
-                <script src="js/steps.js"></script>
-                <script>
-                    var theQuiz = document.getElementById('theQuiz');
-                    //disable form autocomplete
-                    theQuiz.setAttribute("autocomplete", "off");
-
-                    new stepsForm(theQuiz, {
-                        onSubmit: function(form) {
-                            // verberg form
-                            classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
-                            var messageEl = theQuiz.querySelector('.final-message');
-                            messageEl.innerHTML = 'Tanks for doing the quiz.';
-                            classie.addClass(messageEl, 'show');
-                        }
-                    });
-                </script>
+                    <button onclick="start()" id="start">Start de quiz</button>
                 </div>
         </center>
     </main>
@@ -107,7 +59,7 @@
                 <div id="quiz1"></div>
                 <div id="Answers">
                     <section>
-                    <button onclick="openAnswer()" class="show" id="Check">&check;</button>
+                        <button onclick="openAnswer()" class="show" id="Check">&check;</button>
                         <form id="theQuiz" class="simform">
                             <div class="simform-inner">
                                 <ol class="questions">
@@ -130,6 +82,10 @@
                                     <li>
                                         <span><label id="title5" for="q5">openvraag5?</label></span>
                                         <input id="q5" name="q5" type="text" />
+                                    </li>
+                                    <li>
+                                        <span><label id="Naam" for="Naam">Wat is jouw naam?</label></span>
+                                        <input id="naam" name="naam" type="text" />
                                     </li>
                                 </ol>
                                 <!-- /questions -->
@@ -162,7 +118,8 @@
                             // hide form
                             classie.addClass(theQuiz.querySelector('.simform-inner'), 'hide');
                             var messageEl = theQuiz.querySelector('.final-message');
-                            messageEl.innerHTML = 'Tanks for doing the quiz.';
+                            messageEl.innerHTML = 
+                            'Thanks for doing the quiz ' + score + "/10";
                             classie.addClass(messageEl, 'show');
                         }
                     });

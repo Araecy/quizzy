@@ -23,7 +23,7 @@ function openAnswer(){
     }
   }
   // Open vraag 2
-  if (openVraagTeller = 1){
+  if (openVraagTeller == 1){
   if (document.getElementById("q2").value == "test"){
     document.getElementById("title2").innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
     document.getElementById("q2").style = "color: green; !important";
@@ -42,14 +42,81 @@ function openAnswer(){
       }
     }
   }
+  // Open vraag 3
+  if (openVraagTeller == 2){
+    if (document.getElementById("q3").value == "test"){
+      document.getElementById("title3").innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
+      document.getElementById("q3").style = "color: green; !important";
+      if (checkIfAnswerdOpen < 1){
+        if (score < 10){
+          score ++;
+        } checkIfAnswerd ++;
+      }
+      document.getElementById("Check").style = "display: none;"
+    } else{
+      document.getElementById("title3").innerHTML = `<img id="foutGoed" src="Images/wrong_Duran.gif" alt="">`;
+      document.getElementById("q3").style = "color: red; !important";
+      document.getElementById("Check").style = "display: none;"
+      if (checkIfAnswerd < 1){
+        checkIfAnswerdOpen ++;
+        }
+      }
+    }
+    // Open vraag 4
+    if (openVraagTeller == 3){
+      if (document.getElementById("q4").value == "test"){
+        document.getElementById("title4").innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
+        document.getElementById("q4").style = "color: green; !important";
+        if (checkIfAnswerdOpen < 1){
+          if (score < 10){
+            score ++;
+          } checkIfAnswerd ++;
+        }
+        document.getElementById("Check").style = "display: none;"
+      } else{
+        document.getElementById("title4").innerHTML = `<img id="foutGoed" src="Images/wrong_Duran.gif" alt="">`;
+        document.getElementById("q4").style = "color: red; !important";
+        document.getElementById("Check").style = "display: none;"
+        if (checkIfAnswerd < 1){
+          checkIfAnswerdOpen ++;
+          }
+        }
+      }
+    // Open vraag 5
+    if (openVraagTeller == 4){
+      if (document.getElementById("q5").value == "test"){
+        document.getElementById("title5").innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;
+        document.getElementById("q5").style = "color: green; !important";
+        if (checkIfAnswerdOpen < 1){
+          if (score < 10){
+            score ++;
+          } checkIfAnswerd ++;
+        }
+        document.getElementById("Check").style = "display: none;"
+      } else{
+        document.getElementById("title5").innerHTML = `<img id="foutGoed" src="Images/wrong_Duran.gif" alt="">`;
+        document.getElementById("q5").style = "color: red; !important";
+        document.getElementById("Check").style = "display: none;"
+        if (checkIfAnswerd < 1){
+          checkIfAnswerdOpen ++;
+          }
+        }
+      }
 }
 
+
+  
 function openNext(){
 if (checkIfAnswerdOpen = 1){
   document.getElementById("Check").style = "display: inline;";
   checkIfAnswerdOpen --;
   openVraagTeller ++;
+  if (openVraagTeller == 5){
+     document.getElementById("next").innerHTML = "Sumbit quiz";
+     document.getElementById("Check").style = "display: none;";
+   }
   }
+    // document.getElementById("nextQuestion").innerhtml = "Sumbmit";   
 }
 
 function Answer(){
@@ -110,15 +177,8 @@ function answer3(){
 function Submit(){
   console.log(score+"/10");
 }
-//start quiz
+//start quiz vragen
 function start(){
-    let SwapOpen = document.getElementById("main3");
-    let oldOpen = document.getElementById("main"); 
-    SwapOpen.id = "main";
-    oldOpen.id = "main3";
-}
-//start vragen
-function startQuiz(){
     let SwapOpen2 = document.getElementById("mainHidden");
     let oldOpen2 = document.getElementById("main"); 
     SwapOpen2.id = "main";
