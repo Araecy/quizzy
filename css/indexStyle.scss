@@ -24,11 +24,12 @@ body{
     max-width: 90vw;
 }
 
-.divTop{grid-area: 1 / 1 / 2 / 6;}
-.divLeft{grid-area: 2 / 1 / 4 / 2;}
-.divMiddle{grid-area: 2 / 2 / 4 / 5;}
-.divRight{grid-area: 2 / 5 / 4 / 6;}
-.divBottom{grid-area: 3 / 1 / 6 / 6;}
+.divTop {grid-area:  1 / 1 / 2 / 5; }
+.divLeft {grid-area: 1 / 5 / 2 / 6; }
+.divMiddle {grid-area: 2 / 2 / 3 / 6; }
+.divRight {grid-area: 2 / 1 / 3 / 2; }
+.divBottom {grid-area:  3 / 1 / 4 / 5; }
+.div6 { grid-area: 3 / 5 / 4 / 6; }
 
 h1,
 p,

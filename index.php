@@ -13,10 +13,17 @@
         <?php include './nav.php'?>
         <div class="parent">
             <div class="divTop">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis reiciendis inventore magnam, iusto nulla in sapiente mollitia fugit provident! Quod perferendis dolores temporibus cum rem exercitationem ullam quaerat est.
+                <h1>The Lord Of The Rings Quizzy</h1>
+                <p> <I> <b>made by duran</b> </I></p>
+                <h4>
+                    Kleine introductie quizzy LOTR:
+                    It began with the forging of the Great Rings. Three were given to the Elves, immortal, wisest and fairest of all beings. Seven to the Dwarf-Lords, great miners and craftsmen of the mountain halls. And nine, nine rings were gifted to the race of Men, who above all else desire power.
+                </h4>
             </div>
             <div class="divLeft">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam sint eveniet quo mollitia veritatis libero, assumenda non laboriosam consequatur quos, alias reprehenderit iusto suscipit placeat ad, incidunt facere error odio.
+            <center>
+                <button>test</button>
+            </center>
             </div>
             <div class="divMiddle">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, consectetur accusamus, ea distinctio doloribus dolorum iusto nihil eos commodi eligendi sequi praesentium ratione qui quisquam? Nesciunt recusandae alias similique hic.
@@ -25,6 +32,9 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus labore fugiat nisi praesentium, ipsum quisquam possimus voluptatum? Sequi inventore facilis laudantium! Quo, rem facilis quae ad odio ab eligendi maiores.
             </div>
             <div class="divBottom">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui, voluptatibus doloremque saepe ipsam, repellendus porro tempora praesentium veniam magni natus placeat aliquam fugiat minus. Neque temporibus repellat natus libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic facere nulla delectus quia ipsam debitis suscipit! Nobis aut hic necessitatibus delectus quae, possimus ipsa, nostrum facere minus maiores id?
+            </div>
+            <div class="div6">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate qui, voluptatibus doloremque saepe ipsam, repellendus porro tempora praesentium veniam magni natus placeat aliquam fugiat minus. Neque temporibus repellat natus libero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae hic facere nulla delectus quia ipsam debitis suscipit! Nobis aut hic necessitatibus delectus quae, possimus ipsa, nostrum facere minus maiores id?
             </div>
         </div>
