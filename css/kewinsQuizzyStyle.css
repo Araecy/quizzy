@@ -1,7 +1,11 @@
 body{
-    background-color: black !important;
+    /* background-color: black !important; */
     color: white;
     min-width: 320px;
+    background-image: url("../Images/kewinsQuizzyBackground.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 button {
@@ -133,6 +137,12 @@ button {
 
 #summaryButtonDiv > input{
     display: inline;
+    background-color: #141414;
+    color: white;
+    border: none;
+    outline: 2px rgb(80, 80, 80) solid;
+    border-radius: 10px;
+    padding-left: 6px;
 }
 
 #summaryButtonDiv > button{
@@ -146,8 +156,17 @@ button {
     margin: 20px 0 0 calc(50% - 35px);
 }
 
+#endScoreDivParent{
+    width: 560px;
+    margin: 0 auto 0 auto;
+}
+
 #endScorePDiv{
     display: inline-block;
+}
+
+#endScoreP{
+    width: 70px;
 }
 
 #scorePointsDiv{

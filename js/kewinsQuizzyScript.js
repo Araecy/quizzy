@@ -229,7 +229,7 @@ function question(questionNumber){
     document.getElementById("score").innerHTML = `Score: ${score}`;
 }
 
-// This fucntion keeps the score and checks wether it's correct or not.
+// This function keeps the score and checks wether it's correct or not.
 function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId){
     const nodeList = document.querySelectorAll("#answerButtonsDiv > button");
     for(let i = 0; i < nodeList.length; i++){
@@ -241,16 +241,14 @@ function checkIfAnswerIsCorrect(falseOrTrue, answerButtonId){
         document.getElementById("score").innerHTML = `Score: ${score}`;
     }
     else{
-        document.getElementById(answerButtonId).style="background-color: red";
+        document.getElementById(answerButtonId).style="background-color: red; pointer-events: none; cursor: default";
     }
     addAnswerGiven(questionNumberGlobal);
 }
 
 function putAnswerButtonIntoArray(questionNumber, answerButtonId){
     let slicedAnswerButtonId = parseInt(answerButtonId.slice(-1));
-    console.log("SlicedId: "+answerButtonId.slice(-1));
     answersGiven[questionNumber].push(slicedAnswerButtonId);
-    console.log(answersGiven);
 }
 
 function addAnswerGiven(questionNumberGlobal){
@@ -263,12 +261,14 @@ function summary(){
         document.getElementById("firstDiv").innerHTML = `
             <h1>Kewin's quizzy | MR.Robot</h1>
             <h1 class="centerText">Resultaat</h1>
-            <div id="endScorePDiv">
-                <p>Naam: ${naam}</p>
-                <p class="centerText" id="endScoreP">Eindscore: <br><br></p>
-            </div>
-            <div id="scorePointsDiv">
-    
+            <div id="endScoreDivParent">
+            <p>Naam: ${naam}</p>
+                <div id="endScorePDiv">
+                    <p id="endScoreP">Eindscore: <br><br></p>
+                </div>
+                <div id="scorePointsDiv">
+        
+                </div>
             </div>
         `;
     }
@@ -276,11 +276,13 @@ function summary(){
         document.getElementById("firstDiv").innerHTML = `
             <h1>Kewin's quizzy | MR.Robot</h1>
             <h1 class="centerText">Resultaat</h1>
-            <div id="endScorePDiv">
-                <p class="centerText" id="endScoreP">Eindscore: <br><br></p>
-            </div>
-            <div id="scorePointsDiv">
+            <div id="endScoreDivParent">
+                <div id="endScorePDiv">
+                    <p id="endScoreP">Eindscore: <br><br></p>
+                </div>
+                <div id="scorePointsDiv">
 
+                </div>
             </div>
         `;
     }
