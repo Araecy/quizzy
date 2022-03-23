@@ -65,7 +65,8 @@ body {
 //* button hover effect
 #buttonDiv>button:hover,
 #answerButtonsDiv>button:hover,
-#previousAndNextQuestionButtonsDiv>button:hover {
+#previousAndNextQuestionButtonsDiv>button:hover,
+#summaryButtonDiv>button:hover {
     box-shadow: inset 0px 0px 10px 0px $heliotrope;
 }
 
@@ -103,10 +104,14 @@ body {
 }
 
 #summaryButtonDiv {
-    left: 0;
-    right: 0;
-    margin: 0 auto 0 auto;
-    width: 270px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #summaryButtonDiv>p {
@@ -114,7 +119,16 @@ body {
 }
 
 #summaryButtonDiv>input {
+    color: white;
     display: inline;
+    background-color: black;
+    box-shadow: inset 0px 0px 5px 0px $amethyst;
+    border-radius: 30px;
+    box-sizing: border-box;
+    border: 0px solid;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
 }
 
 #summaryButtonDiv>button {
@@ -128,10 +142,10 @@ body {
     color: $mauve;
     background-color: $buttonColor;
     font-family: Arial;
-    width: 250px;
-    font-size: 17px;
-    padding: 12px 21px;
-    margin: 0 5px 0 0;
+    width: auto;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 5px 0 0 0;
     text-decoration: none;
 }
 
