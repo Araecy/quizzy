@@ -49,3 +49,12 @@ div{
 .parent > div > h1{
     margin: 0 0 10px 0;
 }
+
+.divLeft button {
+    height: 35px;
+    width: 40%;
+    color: white;
+    margin-top: 60%;
+    outline: white solid 2px;
+    background: $gradient-right-opacity;
+}

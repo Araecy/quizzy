@@ -22,7 +22,7 @@
             </div>
             <div class="divLeft">
             <center>
-                <button>test</button>
+            <a href='./quizzy_duran.php'><button>Start quiz</button></a>
             </center>
             </div>
             <div class="divMiddle">

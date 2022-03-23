@@ -92,4 +92,14 @@ div {
 .parent > div > h1 {
   margin: 0 0 10px 0;
 }
+
+.divLeft button {
+  height: 35px;
+  width: 40%;
+  color: white;
+  margin-top: 60%;
+  outline: white solid 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#10002baa), color-stop(#240046aa), color-stop(#3c096caa), color-stop(#5a189aaa), color-stop(#7b2cbfaa), color-stop(#9d4eddaa), color-stop(#c77dffaa), to(#e0aaffaa));
+  background: linear-gradient(90deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
+}
 /*# sourceMappingURL=indexStyle.css.map */
