@@ -14,7 +14,7 @@ let openVraagTeller = 0;
 
 function openAnswer() {
   // Open vraag 1
-  if (document.getElementById("q1").value == "test") {
+  if (document.getElementById("q1").value == "Gandalf") {
     document.getElementById(
       "title1"
     ).innerHTML = `<img id="foutGoed" src="Images/correct_Duran.gif" alt="">`;

@@ -64,11 +64,11 @@
                             <div class="simform-inner">
                                 <ol class="questions">
                                     <li>
-                                        <span><label id="title1" for="q1">Openvraag?</label></span>
+                                        <span><label id="title1" for="q1">Wie is de tovenaar?</label></span>
                                         <input id="q1" name="q1" type="text" />
                                     </li>
                                     <li>
-                                        <span><label id="title2" for="q2">Openvraag2?</label></span>
+                                        <span><label id="title2" for="q2">Who is the main protagonist from the hobbits?</label></span>
                                         <input id="q2" name="q2" type="text" />
                                     </li>
                                     <li>
