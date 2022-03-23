@@ -11,7 +11,7 @@
     <body>
         <?php include 'nav.php'?>
         <div id="firstDiv">
-            <h1>Osu quizzy</h1>
+            <h1>osu quizzy</h1>
             <div id="buttonDiv">
                 <button onclick="question(1)">Start quiz</button>
             </div>

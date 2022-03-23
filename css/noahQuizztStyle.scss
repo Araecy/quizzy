@@ -1,93 +1,149 @@
-@import './_variables.scss';
-
+@import "./_variables.scss";
 $backgroundColor: #000;
 $textColor: #ffffff;
 $buttonColor: #000000;
 $buttonBorderColor: #535353;
 $buttonColorHover: #90ee90;
+body {
+    background-color: $backgroundColor !important;
+    background-image: url("../images/osubackground.png") !important;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: $textColor;
+    font-family: $font-family-monospace;
+}
+
+h1 {
+    margin: 10px auto;
+    font-size: 42px;
+    text-align: center;
+    min-height: 49px;
+}
 
 body {
-  background-color: $backgroundColor !important;
-  background-image: url("../images/osuBackground.jpg") !important;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  color: $textColor;
-  font-family: $font-family-monospace;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: $textColor;
 }
-h1 {
-  margin: 10px auto;
-  font-size: 42px;
-  text-align: center;
-  min-height: 49px;
-}
-body {
-  font-size: 20px;
-  font-family: sans-serif;
-  color: $textColor;
-}
+
 //*  to center text and size
 .centerText {
-  text-align: center;
-  margin: 25px 0 0 0;
+    text-align: center;
+    margin: 25px 0 0 0;
 }
+
 .question {
-  font-weight: 600;
+    font-weight: 600;
 }
+
 .answers {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
+
 //* Button style
-#buttonDiv > button,
-#answerButtonsDiv > button,
-#previousAndNextQuestionButtonsDiv > button {
-  background-color: transparent;
-  box-shadow: inset 0px 0px 5px 0px $amethyst;
-  box-sizing: border-box;
-  border-radius: 30px;
-  border: 0px solid;
-  display: inline-block;
-  cursor: pointer;
-  color: $mauve;
-  background-color: $buttonColor;
-  font-family: Arial;
-  width: 250px;
-  font-size: 17px;
-  padding: 12px 21px;
-  margin: 0 5px 0 0;
-  text-decoration: none; 
+#buttonDiv>button,
+#answerButtonsDiv>button,
+#previousAndNextQuestionButtonsDiv>button {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 5px 0px $amethyst;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 0px solid;
+    display: inline-block;
+    cursor: pointer;
+    color: $mauve;
+    background-color: $buttonColor;
+    font-family: Arial;
+    width: 250px;
+    font-size: 17px;
+    padding: 12px 21px;
+    margin: 0 5px 0 0;
+    text-decoration: none;
 }
+
 //* button hover effect
-#buttonDiv > button:hover,
-#answerButtonsDiv > button:hover,
-#previousAndNextQuestionButtonsDiv > button:hover {
-  box-shadow: inset 0px 0px 10px 0px $heliotrope;
+#buttonDiv>button:hover,
+#answerButtonsDiv>button:hover,
+#previousAndNextQuestionButtonsDiv>button:hover {
+    box-shadow: inset 0px 0px 10px 0px $heliotrope;
 }
+
 //* firstDiv,
 #buttonDiv,
 #answerButtonsDiv,
 #previousAndNextQuestionButtonsDiv {
-  display: flex;
-  flex-direction: column;
-  align-content: space-evenly;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  // width: 400px
-  height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    // width: 400px
+    height: 230px;
 }
+
 #previousAndNextQuestionButtonsDiv {
-  margin: 0px 0px 0px 0px;
-  height: 120px;
+    margin: 0px 0px 0px 0px;
+    height: 120px;
 }
-#previousAndNextQuestionButtonsDiv > button {
-  margin: 0px 0px 0px 0px;
+
+#previousAndNextQuestionButtonsDiv>button {
+    margin: 0px 0px 0px 0px;
 }
+
 .nextQuestionButtonFirstQuestion {
-  margin: 0 0 54px 0 !important;
+    margin: 0 0 54px 0 !important;
 }
+
 .previousButtonLastQuestion {
-  margin: 54px 0 0 0 !important;
+    margin: 54px 0 0 0 !important;
+}
+
+#summaryButtonDiv {
+    left: 0;
+    right: 0;
+    margin: 0 auto 0 auto;
+    width: 270px;
+}
+
+#summaryButtonDiv>p {
+    display: inline;
+}
+
+#summaryButtonDiv>input {
+    display: inline;
+}
+
+#summaryButtonDiv>button {
+    background-color: transparent;
+    box-shadow: inset 0px 0px 5px 0px $amethyst;
+    box-sizing: border-box;
+    border-radius: 30px;
+    border: 0px solid;
+    display: inline-block;
+    cursor: pointer;
+    color: $mauve;
+    background-color: $buttonColor;
+    font-family: Arial;
+    width: 250px;
+    font-size: 17px;
+    padding: 12px 21px;
+    margin: 0 5px 0 0;
+    text-decoration: none;
+}
+
+#endScorePDiv {
+    // display: inline-block;
+}
+
+#scorePointsDiv {
+    width: 360px;
+    margin: 0 auto 0 auto;
+}
+
+#scorePointsDiv>img {
+    margin: 0 auto 0 auto;
 }
