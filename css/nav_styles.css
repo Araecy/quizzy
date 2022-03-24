@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0 !important;
   padding: 0 !important;
@@ -58,7 +59,7 @@ body {
 }
 
 #menu a.dropdown-arrow:after {
-  content: "\25BE";
+  content: "▾";
   margin-left: 5px;
 }
 
@@ -87,7 +88,7 @@ body {
 
 #menu label:before {
   font-size: 1.6em;
-  content: "\2261";
+  content: "≡";
   margin-left: 20px;
 }
 
@@ -125,6 +126,7 @@ body {
   #menu {
     position: relative;
   }
+
   #menu ul {
     background: #111;
     position: absolute;
@@ -135,34 +137,42 @@ body {
     height: auto;
     display: none;
   }
+
   #menu ul.sub-menus {
     width: 100%;
     position: static;
   }
+
   #menu ul.sub-menus a {
     padding-left: 30px;
   }
+
   #menu li {
     display: block;
     float: none;
     width: auto;
   }
+
   #menu input,
-  #menu label {
+#menu label {
     position: absolute;
     top: 0;
     left: 0;
     display: block;
   }
+
   #menu input {
     z-index: 4;
   }
+
   #menu input:checked + label {
     color: white;
   }
+
   #menu input:checked + label:before {
-    content: "\00d7";
+    content: "×";
   }
+
   #menu input:checked ~ ul {
     display: block;
   }
