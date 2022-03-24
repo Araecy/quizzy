@@ -8,23 +8,21 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  min-width: 916px;
 }
 
 /* grid */
 .parent {
-  width: 75%;
+  width: 90%;
   margin: 50px auto 0 auto;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
   -ms-grid-rows: (1fr)[5];
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   max-width: 90vw;
-  min-width: 687px;
 }
 
 .divTop {
@@ -32,7 +30,7 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
-  grid-area: 1 / 1 / 2 / 4;
+  grid-area: 1 / 1 / 2 / 5;
 }
 
 .divLeft {
@@ -40,7 +38,7 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
-  grid-area: 1 / 5 / 2 / 4;
+  grid-area: 1 / 5 / 2 / 6;
 }
 
 .divMiddle {
@@ -48,7 +46,7 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 2;
   -ms-grid-column-span: 4;
-  grid-area: 2 / 2 / 3 / 5;
+  grid-area: 2 / 2 / 3 / 6;
 }
 
 .divRight {
@@ -64,7 +62,7 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 4;
-  grid-area: 3 / 1 / 4 / 4;
+  grid-area: 3 / 1 / 4 / 5;
 }
 
 .div6 {
@@ -72,7 +70,7 @@ body {
   -ms-grid-row-span: 1;
   -ms-grid-column: 5;
   -ms-grid-column-span: 1;
-  grid-area: 3 / 5 / 4 / 4;
+  grid-area: 3 / 5 / 4 / 6;
 }
 
 h1,
@@ -95,19 +93,12 @@ div {
   margin: 0 0 10px 0;
 }
 
-.startQuizA{
+.divLeft button, .divRight button {
   height: 35px;
-  width: 80px;
-  margin: 110px 0 0 calc(50% - 40px);
-}
-
-.startQuizButton{
-  height: 35px;
-  width: 80px;
+  width: 40%;
   color: white;
-  margin: 110px auto 0 auto;
+  margin-top: 60%;
   outline: white solid 2px;
   background: -webkit-gradient(linear, left top, right top, from(#10002baa), color-stop(#240046aa), color-stop(#3c096caa), color-stop(#5a189aaa), color-stop(#7b2cbfaa), color-stop(#9d4eddaa), color-stop(#c77dffaa), to(#e0aaffaa));
   background: linear-gradient(90deg, #10002baa, #240046aa, #3c096caa, #5a189aaa, #7b2cbfaa, #9d4eddaa, #c77dffaa, #e0aaffaa);
 }
-/*# sourceMappingURL=indexStyle.css.map */
