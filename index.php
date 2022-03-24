@@ -23,13 +23,17 @@
             </h4>
         </div>
         <div class="divLeft">
+            <center>
                 <a class="startQuizA" href='./quizzy_duran.php'><button class="startQuizButton">Start quiz</button></a>
+            </center>
         </div>
         <div class="divMiddle">
         osu! is a free-to-play rhythm game primarily developed, published, and created by Dean "peppy" Herbert. Inspired by iNiS' rhythm game Osu! Tatakae! Ouendan, it was written in C# on the .NET framework, and was released for Microsoft Windows on 16 September 2007.
         </div>
         <div class="divRight">
+            <center>
                 <a class="startQuizA" href='./quizzy_noah.php'><button class="startQuizButton">Start quiz</button></a>
+            </center>
         </div>
         <div class="divBottom">
             <h1>Mr. Robot Quizzy</h1>
@@ -44,7 +48,9 @@
             </p>
         </div>
         <div class="div6">
-            <a class="startQuizA" href='./kewinsQuizzy.php'><button class="startQuizButton">Start quiz</button></a>
+            <center>
+                <a class="startQuizA" href='./kewinsQuizzy.php'><button class="startQuizButton">Start quiz</button></a>
+            </center>
         </div>
     </div>
 </body>
