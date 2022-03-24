@@ -93,7 +93,7 @@ div {
   margin: 0 0 10px 0;
 }
 
-.divLeft button, .divRight button {
+.divLeft button, .divRight button, .div6 button {
   height: 35px;
   width: 40%;
   color: white;
